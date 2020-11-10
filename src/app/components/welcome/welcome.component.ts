@@ -15,7 +15,7 @@ export class WelcomeComponent implements OnInit {
   myStyle: Object = {
     'position': 'absolute',
     'width': '100%',
-    'height': '100%',
+    'height': '90%',
     'z-index': 10,
     'top': 0,
     'left': 0,
@@ -46,7 +46,7 @@ export class WelcomeComponent implements OnInit {
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 0.8,
         "random": false,
         "anim": {
           "enable": false,
@@ -68,7 +68,7 @@ export class WelcomeComponent implements OnInit {
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#5B566E",
+        "color": "#FFFFFF",
         "opacity": 0.4,
         "width": 2
       },
