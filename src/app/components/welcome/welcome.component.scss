@@ -18,31 +18,37 @@ body {
     --background-color: #414141;
     --gray-text: #525252;
     scroll-behavior: smooth;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(29,83,111,1) 47%, rgba(255,255,255,0.4066001400560224) 100%);
+    
+    background-image: url(/assets/img/Background3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 
 button{
-    width: 120px;
-    background-color: #ffffff; /* Green */
-    border-radius: 3%;
-    border-color: #e8dfdf00;
-    color: black;
-    padding: 5px ;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    z-index: 150;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    &:hover {
-        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(232, 255, 21, 0.19);
-        background-color: #e9dd36; /* Green */
-      }
+  width: 130px;
+  background-color: #e9dd36; /* Green */
+  border-radius: 5%;
+  border-color: #e8dfdf00;
+  color: black;
+  padding: 5px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 20px;
+  z-index: 150;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0, 0, 0, 0.452);
+  &:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(232, 255, 21, 0.486);
+      background-color: #e9dd36; /* Green */
+    }
 }
 h1 {
     font-size: var(--header1);
@@ -83,7 +89,7 @@ ul {
 a {
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(26, 26, 41);
     font-size: 1.5vw;
     padding-top:5px;
     padding-bottom:10px;
@@ -100,6 +106,8 @@ a {
 h1 {
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
     margin:0px;
+    font-weight: bolder;
+    padding-bottom:10px;
 }
 
 .Box-Left {

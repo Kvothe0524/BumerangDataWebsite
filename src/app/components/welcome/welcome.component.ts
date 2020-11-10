@@ -46,7 +46,7 @@ export class WelcomeComponent implements OnInit {
         }
       },
       "opacity": {
-        "value": 1,
+        "value": 0.5,
         "random": false,
         "anim": {
           "enable": false,
