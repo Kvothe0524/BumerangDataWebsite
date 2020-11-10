@@ -1,0 +1,80 @@
+body {
+    font-family: "Ruhl", sans-serif;
+    
+}
+.main-footer {
+    min-height: 10em;
+}
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #26272B;
+    color: aliceblue;
+}
+.row {
+    min-height: 5em;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.column {
+    width: 30%;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.aboutus-text, .footer-final, .footer-links a {
+    color:  #59595B;
+}
+.aboutus-text{
+    text-align: justify;
+}
+.aboutus-title {
+    font-size: 1.4em;
+}
+.container hr {
+    width: 98%;
+    border-top-color:#bbb;
+    opacity:0.5
+}
+.footer-final{
+    width: 100%;
+    text-align: center;
+}
+.footer-links-title {
+    font-size: 1.4em;
+    padding-bottom: 0.4em;
+}
+.footer-links a {
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.footer-links-text{
+    padding-top: 0.5em;
+}
+.footer-links a:hover {
+    color: rgb(36, 66, 202);
+}
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+@media screen and (max-width: 992px) {
+    .column {
+      width: 100%;
+    }
+    .aboutus-text {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 842px) {
+    .col-links {
+        display: none;
+    }
+}

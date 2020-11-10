@@ -1,0 +1,83 @@
+<body>
+    <section class="Container">
+
+        <form [formGroup]="form" novalidate (ngSubmit)="formulario()">
+            <div class="Top-Title">
+                <h1>Contáctanos</h1>
+            </div>
+            <div class="wrapper">
+                <div class="form">
+                    <div class="input-form">
+                                               
+                        <div class="input">
+                            <input type="text" placeholder="Nombre" formControlName="phone">
+
+                            <div class="validacion" *ngIf="phone.errors && phone.touched">
+                                <div *ngIf="phone.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="phone.hasError('pattern')">
+                                    Ingrese un numero de telefono valido
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Correo" formControlName="phone">
+
+                            <div class="validacion" *ngIf="phone.errors && phone.touched">
+                                <div *ngIf="phone.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="phone.hasError('pattern')">
+                                    Ingrese un numero de telefono valido
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Telefono - +56941292464" formControlName="phone">
+
+                            <div class="validacion" *ngIf="phone.errors && phone.touched">
+                                <div *ngIf="phone.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="phone.hasError('pattern')">
+                                    Ingrese un numero de telefono valido
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inner-msg">
+                        <div class="msg">
+                            <textarea name="" placeholder="Mensaje - Hola tengo una duda" id="" cols="30" rows="10" formControlName="message"></textarea>
+
+                            <div class="validacion" *ngIf="message.errors && message.touched">
+                                <div *ngIf="message.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="message.hasError('minlength')">
+                                    Ingrese 5 caracteres como minimo
+                                </div>
+                                <div *ngIf="message.hasError('maxlength')">
+                                    No puede poseer mas de 40 caracteres el mensaje
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+        <div class="text">
+            <h1>Teléfono</h1>
+            <p>Info</p>
+            <h1>Email</h1>
+            <p>Info</p>
+            <h1>Oficina</h1>
+            <p>Info</p>
+        </div>
+    </section>
+</body>

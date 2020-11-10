@@ -1,0 +1,91 @@
+<body>
+    <section class="Container">
+        <div class="Top-Title">
+            <h2>Cotiza con nosotros</h2>
+            <p>Porfavor rellenar formulario y nos contactaremos lo mas pronto posible</p>
+        </div>
+        <form [formGroup]="form" novalidate (ngSubmit)="formulario()">
+            <div class="wrapper">
+                <div class="form">
+                    <div class="input-form">
+                        <div class="input">
+                            <input type="text" placeholder="Nombre - Juan" formControlName="name">
+
+                            <div class="validacion" *ngIf="name.errors && name.touched">
+                                <div *ngIf="name.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="name.hasError('minlength')">
+                                    Ingrese 3 caracteres como minimo
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input">
+                            <input type="text" placeholder="Apellido - Perez" formControlName="name2">
+
+                            <div class="validacion" *ngIf="name2.errors && name2.touched">
+                                <div *ngIf="name2.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="name2.hasError('minlength')">
+                                    Ingrese 3 caracteres como minimo
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input">
+                            <input type="text" placeholder="Email - micorreo@gmail.com" formControlName="email">
+
+                            <div class="validacion" *ngIf="email.errors && email.touched">
+                                <div *ngIf="email.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="email.hasError('minlength')">
+                                    Ingrese 5 caracteres como minimo
+                                </div>
+                                <div *ngIf="email.hasError('pattern')">
+                                    Ingrese un correo valido
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <input type="text" placeholder="Telefono - +56941292464" formControlName="phone">
+
+                            <div class="validacion" *ngIf="phone.errors && phone.touched">
+                                <div *ngIf="phone.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="phone.hasError('pattern')">
+                                    Ingrese un numero de telefono valido
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inner-msg">
+                        <div class="msg">
+                            <textarea name="" placeholder="Mensaje - Hola tengo una duda" id="" cols="30" rows="10" formControlName="message"></textarea>
+
+                            <div class="validacion" *ngIf="message.errors && message.touched">
+                                <div *ngIf="message.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="message.hasError('minlength')">
+                                    Ingrese 5 caracteres como minimo
+                                </div>
+                                <div *ngIf="message.hasError('maxlength')">
+                                    No puede poseer mas de 40 caracteres el mensaje
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>

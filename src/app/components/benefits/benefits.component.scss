@@ -1,0 +1,348 @@
+body {
+    height: 3000px;
+    width: 100%;
+
+    background: rgba($color: #E8DFDF, $alpha: 1.0);
+    display: flex;
+    flex-direction: column;
+    font-size: 100%;
+    --header1: calc(1.2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(3.5rem + 1vw);
+    --big: calc(6rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --gray-text: #525252;
+    scroll-behavior: smooth;
+    background: rgb(255, 255, 255);
+
+}
+
+h1 {
+    font-size: var(--header1);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: var(--text);
+}
+
+h2 {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: var(--header2);
+}
+
+h3 {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: var(--header3);
+}
+
+h4,
+h5 {
+    font-family: "Ruhl", sans-serif;
+    font-size: var(--header4);
+}
+
+ul {
+    font-family: "Ruhl", sans-serif;
+    list-style: none;
+}
+
+a {
+    font-family: "Ruhl", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}
+
+p {
+    font-family: "Ruhl", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4vw;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Ruhl Medium", sans-serif;
+}
+
+
+.Main-Background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Box-Middle {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//Section Top
+.Section-1 {
+    height: 25%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+    background: rgba(246, 246, 246, 0.678);
+    text-align: center;
+
+    .img-1 {
+        width: 80%;
+    }
+
+    .left {
+        width: 70%;
+    }
+
+    .right {
+        width: 30%;
+    }
+}
+
+.Section-2 {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    text-align: center;
+
+    .Box-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-2 {
+        width: 100%;
+    }
+
+    .beneficios {}
+
+    .container {
+        width: 100%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 5vw);
+        grid-gap: 0rem;
+
+        img {
+            width: 30px;
+            height: 30px;
+            padding: 0%;
+            margin: 0%;
+        }
+    }
+
+    .gallery__item {
+        padding: 0%;
+        margin: 0%;
+
+        p {
+            padding: 0%;
+            margin: 0%;
+            text-align: left;
+        }
+
+        display:flex;
+        flex-direction: column;
+        align-content: left;
+        justify-content: left;
+        align-items: left;
+        justify-items: left;
+        vertical-align: middle;
+    }
+
+
+    .gallery__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .gallery__item--2 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .gallery__item--3 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .gallery__item--4 {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+}
+
+.Section-3 {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+
+    background-image: url(/assets/img/Background2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .Box-Middle {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.Section-4 {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+
+
+    .Box-Middle {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        vertical-align: middle;
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        img {
+            width: 50%;
+        }
+
+        .gallery {
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-rows: repeat(2, 5vw);
+            grid-gap: 0rem;
+
+            img {
+                width: 30px;
+                height: 30px;
+                padding: 0%;
+                margin: 0%;
+            }
+        }
+
+        .gallery__item {
+            padding: 0%;
+            margin: 0%;
+
+            p {
+                padding: 0%;
+                margin: 0%;
+                text-align: left;
+            }
+
+            display:flex;
+            flex-direction: column;
+            align-content: left;
+            justify-content: left;
+            align-items: left;
+            justify-items: left;
+            vertical-align: middle;
+        }
+
+
+        .gallery__item--1 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .gallery__item--2 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .gallery__item--3 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+
+        .gallery__item--4 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+    }
+}
+
+
+//Section Middle
+
+
+//RESPONSIVE
+@media screen and (max-width: 1200px) {
+    .Main-Background {}
+}
+
+@media screen and (max-width: 842px) {
+    .Section {
+        flex-direction: column;
+
+
+
+
+
+
+
+
+    }
+}

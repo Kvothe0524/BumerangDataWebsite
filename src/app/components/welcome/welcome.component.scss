@@ -1,0 +1,313 @@
+body {
+    height: 1000px;
+    width: 100%;
+    padding-bottom: 75px;
+    background: rgba($color: #E8DFDF, $alpha: 1.0);
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 100%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(3.5rem + 1vw);
+    --big: calc(6rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --gray-text: #525252;
+    scroll-behavior: smooth;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(29,83,111,1) 47%, rgba(255,255,255,0.4066001400560224) 100%);
+}
+
+
+button{
+    width: 120px;
+    background-color: #ffffff; /* Green */
+    border-radius: 3%;
+    border-color: #e8dfdf00;
+    color: black;
+    padding: 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    z-index: 150;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    &:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(232, 255, 21, 0.19);
+        background-color: #e9dd36; /* Green */
+      }
+}
+h1 {
+    font-size: var(--header1);
+    color:white;
+}
+
+li,
+
+label,
+input,
+a,
+p {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: var(--text);
+}
+
+h2 {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: var(--header2);
+}
+
+h3 {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: var(--header3);
+}
+
+h4,
+h5 {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    font-size: var(--header4);
+}
+
+ul {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    list-style: none;
+}
+
+a {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+    padding-top:5px;
+    padding-bottom:10px;
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+    margin:0px;
+}
+
+.Box-Left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    .tittle{
+      padding-bottom:10px;
+    }
+}
+
+.Box-Right {
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    img{
+      opacity:20%;
+    }
+    .descriptions{
+      position: absolute;
+      z-index:120;
+      text-align:left;
+      display:flex;
+      flex-direction: column;
+      a{
+         padding:1px;
+      }
+    }
+
+
+
+}
+
+.Main-Background {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+    
+
+}
+
+.clouds{
+    display:flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    vertical-align: bottom;
+    width:100%;
+    position: absolute;
+    z-index: 10;
+    top:65%;
+
+
+    img{
+        width:100%;
+    }
+}
+.animate__fadeInDown1{
+  animation: fadeInDown ease 1s;
+  -webkit-animation: fadeInDown ease 1s;
+  -moz-animation: fadeInDown ease 1s;
+  -o-animation: fadeInDown ease 1s;
+  -ms-animation: fadeInDown ease 1s;
+}
+//FADE IN EFFECT
+.animate__fadeInDown2 {
+  animation: fadeInDown ease s;
+  -webkit-animation: fadeInDown ease 4s;
+  -moz-animation: fadeInDown ease 4s;
+  -o-animation: fadeInDown ease 4s;
+  -ms-animation: fadeInDown ease 4s;
+}
+.animate__fadeInDown3 {
+  animation: fadeInDown ease 7s;
+  -webkit-animation: fadeInDown ease 7s;
+  -moz-animation: fadeInDown ease 7s;
+  -o-animation: fadeInDown ease 7s;
+  -ms-animation: fadeInDown ease 7s;
+}
+.animate__fadeInDown4 {
+  animation: fadeInDown ease 10s;
+  -webkit-animation: fadeInDown ease 10s;
+  -moz-animation: fadeInDown ease 10s;
+  -o-animation: fadeInDown ease 10s;
+  -ms-animation: fadeInDown ease 10s;
+}
+.animate__fadeInDown5 {
+  animation: fadeInDown ease 13s;
+  -webkit-animation: fadeInDown ease 13s;
+  -moz-animation: fadeInDown ease 13s;
+  -o-animation: fadeInDown ease 13s;
+  -ms-animation: fadeInDown ease 13s;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animate__fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+} 
+  
+//FADE OUT EFFECT  
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+.animate__fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+}
+
+
+
+//ANIMATION
+
+
+@media screen and (max-width: 1200px) {
+    .Main-Background {
+
+        .Box-Right {
+            width: 100%;
+            text-align: center;
+
+            .Welcome-Img {
+                height: 400px;
+                width: 400px;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 842px) {
+    .Main-Background {
+        flex-direction: column;
+
+        .Box-Left {
+            width: 100%;
+            text-align: center;
+
+            a {
+                font-size: 3vw;
+            }
+        }
+
+        .Box-Right {
+            width: 100%;
+            text-align: center;
+
+            .Welcome-Img {
+                height: 300px;
+                width: 300px;
+            }
+
+        }
+
+    }
+
+}
+

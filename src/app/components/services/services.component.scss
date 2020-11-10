@@ -1,0 +1,109 @@
+body{
+    min-height:750px;
+    width:100%;
+    background: rgba($color: #E8DFDF, $alpha: 1.0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.Main-Title, .card-title-text, .card-price-text {
+    text-align: center;
+    margin:0;
+}
+.container {
+    position: relative;
+    width: 100%;
+
+}
+.row {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.column {
+    width: 30%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.ml-auto {
+    display: flex;
+    align-items: center;
+    align-content:center ;
+    justify-content: center;
+    justify-items: center;
+}
+@keyframes fadeIn {
+    0% {opacity:0; transform: translate(-1000px);}
+    100% {opacity:1; transform: translate(1000);}
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    background-clip: border-box;
+    border-radius: .25rem;
+    box-shadow: 0 10px 15px -4px rgba(0, 0, 0, 0.20);
+    background-color: #406E74;
+    color: #E8DFDF;
+    max-width: 22em;
+    min-width: 14em;
+    min-height: 440px;
+    padding: 30px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.is-visible {
+    animation: fadeIn ease 2.5s;
+}
+.card-description-text {
+    text-align: justify;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: #d66b58;
+    border-color: #fc9785;
+    color: #FFFFFF;
+    opacity: 1;
+    box-sizing: border-box;
+    border-width: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0.5rem 18px;
+    line-height: 1.75;
+
+    cursor: pointer;
+    text-transform: uppercase;
+    transition-duration: 0.5s;
+}
+.btn:hover {
+    background-color: #e24529;
+}
+.btn:focus {
+    outline: 0;
+    border-color: #e64202;
+    background-color: #bd3a07;
+}
+@media screen and (max-width: 992px) {
+    .column {
+      width: 100%;
+    }
+}
+@media screen and (max-width: 720px) {
+  }
