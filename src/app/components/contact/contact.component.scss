@@ -1,5 +1,5 @@
 body{
-    min-height:850px;
+    min-height:950px;
     width:100%;
     background: rgba($color: #E8DFDF, $alpha: 1.0);
     display: flex;
@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items:center;
     background-image: url(/assets/img/picture4.jpg);
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -153,6 +153,10 @@ body{
             }
         }
     }
+}
+
+.Contact{
+    font-size:2rem;
 }
 
 .text{
