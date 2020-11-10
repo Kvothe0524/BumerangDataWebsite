@@ -3,7 +3,7 @@ strong{
   
 }
 body {
-    height: 800px;
+    min-height: 700px;
     width: 100%;
     padding-bottom: 75px;
     background: rgba($color: #E8DFDF, $alpha: 1.0);
@@ -114,7 +114,7 @@ button{
 
 .subtitle{
   font-weight: lighter;
-  font-size: 2rem ;
+  font-size: 3rem ;
   color: rgba(255, 255, 255, 0.589);
 }
 
