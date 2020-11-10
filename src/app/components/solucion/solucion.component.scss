@@ -12,7 +12,7 @@ body {
     vertical-align: middle;
     align-items: center;
     font-size: 100%;
-    --header1: calc(4rem + 1vw);
+    --header1: calc(5rem + 1vw);
     --header2: calc(3.5rem + 1vw);
     --header3: calc(3rem + 1vw);
     --header4: calc(2.4rem + 1vw);
@@ -110,10 +110,7 @@ button{
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
       }
 }
-h1 {
-    font-size: var(--header1);
-    color:white;
-}
+
 
 .subtitle{
   font-weight: lighter;
@@ -171,7 +168,9 @@ a {
 
 h1 {
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
-    margin:0px;
+  margin:0px;
+  font-size: var(--header1);
+  color:white;
 }
 
 .Box-Middle {
