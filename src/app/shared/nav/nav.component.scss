@@ -305,7 +305,10 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+  .nav-links a {
 
+    font-size: 7vw;
+  }
   .burger {
     right: 7%;
   }
