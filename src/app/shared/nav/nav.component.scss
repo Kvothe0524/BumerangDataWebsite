@@ -194,12 +194,6 @@ nav {
 }
 
 @media screen and (max-width: 842px) {
-
-
-  /*.main-head {
-      
-    }*/
-
   /* BURGER THING */
   .burger {
     position: fixed;
@@ -231,6 +225,10 @@ nav {
     left: 100%;
     flex-direction: column;
     align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
     transition: transform 1s ease;
     border: black;
     border-width: 2px;
@@ -291,6 +289,18 @@ nav {
   html {
     --nav: 1.4rem;
 
+  }
+  #logo {
+    width: 30%;
+    height: 30%;
+ 
+  }
+}
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 40%;
+    height: 40%;
+ 
   }
 }
 
