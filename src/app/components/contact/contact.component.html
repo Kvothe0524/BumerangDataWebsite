@@ -3,32 +3,37 @@
         <form [formGroup]="form" novalidate (ngSubmit)="formulario()">
             <div class="Top-Title">
                 <h1 class="Contact">Contáctanos</h1>
+                <p>contacto@bumerangdata.com</p>
             </div>
             <div class="wrapper">
                 <div class="form">
                     <div class="input-form">
                                                
                         <div class="input">
-                            <input type="text" placeholder="Nombre" formControlName="phone">
+                            <input type="text" placeholder="Nombre" formControlName="name">
 
-                            <div class="validacion" *ngIf="phone.errors && phone.touched">
-                                <div *ngIf="phone.hasError('required')">
+                            <div class="validacion" *ngIf="name.errors && name.touched">
+                                <div *ngIf="name.hasError('required')">
                                     Es un campo requerido
                                 </div>
-                                <div *ngIf="phone.hasError('pattern')">
-                                    Ingrese un numero de telefono valido
+                                    <div *ngIf="name.hasError('minlength')">
+                                    Ingrese 3 caracteres como minimo
                                 </div>
                             </div>
                         </div>
-                        <div class="input">
-                            <input type="text" placeholder="Correo" formControlName="phone">
 
-                            <div class="validacion" *ngIf="phone.errors && phone.touched">
-                                <div *ngIf="phone.hasError('required')">
+                        <div class="input">
+                            <input type="text" placeholder="Email - micorreo@gmail.com" formControlName="email">
+
+                            <div class="validacion" *ngIf="email.errors && email.touched">
+                                <div *ngIf="email.hasError('required')">
                                     Es un campo requerido
                                 </div>
-                                <div *ngIf="phone.hasError('pattern')">
-                                    Ingrese un numero de telefono valido
+                                <div *ngIf="email.hasError('minlength')">
+                                    Ingrese 5 caracteres como minimo
+                                </div>
+                                <div *ngIf="email.hasError('pattern')">
+                                    Ingrese un correo valido
                                 </div>
                             </div>
                         </div>
@@ -70,13 +75,12 @@
                 </div>
             </div>
         </form>
-        <div class="text">
-            <h1>Teléfono</h1>
-            <p>+56 9 5955 8599</p>
-            <h1>Email</h1>
-            <p>contacto@bumerangdata.com</p>
-            <h1>Oficina</h1>
-            <p>Santiago, Ñuñoa</p>
-        </div>
+            <!--      <div class="text">
+  <h1>Teléfono</h1> 
+            <p>+56 9 5955 8599</p>-->
+
+           <!-- <h1>Oficina</h1>
+            <p>Santiago, Ñuñoa</p> 
+        </div>-->
     </section>
 </body>

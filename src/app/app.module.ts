@@ -19,6 +19,8 @@ import { ExpComponent } from './exp/exp.component';
 import { CotizarComponent } from './components/cotizar/cotizar.component';
 import { SolucionComponent } from './components/solucion/solucion.component';
 import { ParticlesModule } from 'angular-particle';
+
+import {  HashLocationStrategy, LocationStrategy} from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +46,7 @@ import { ParticlesModule } from 'angular-particle';
     HttpClientModule,
     ParticlesModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

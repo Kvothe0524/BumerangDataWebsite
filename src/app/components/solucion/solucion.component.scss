@@ -30,8 +30,8 @@ label,
 input,
 a,
 p {
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
-    font-size: var(--text);
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");    font-size: var(--text);
 }
 strong{
   color:white;
@@ -42,30 +42,33 @@ strong{
   color: rgba(255, 255, 255, 0.589);
 }
 h1 {
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
-  margin:0px;
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");  margin:0px;
   font-size: var(--header1);
   color:white;
 }
 h2 {
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
-    font-size: var(--header2);
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");    font-size: var(--header2);
 }
 
+u{
+  font-size:2.3rem;
+}
 h3 {
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
-    font-size: var(--header3);
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");    font-size: var(--header3);
 }
 
 h4,
 h5 {
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
-    font-size: var(--header4);
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");    font-size: var(--header4);
 }
 
 ul {
-	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
-    list-style: none;
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");    list-style: none;
 }
 .Box-Middle {
     padding-top:200px;
@@ -142,6 +145,9 @@ ul {
       h1{
         font-size:2.5rem;
       }
+      u{
+        font-size:2rem;
+      }
       
 
     }
@@ -152,6 +158,9 @@ ul {
        
       h1{
         font-size:2rem;
+      }
+      u{
+        font-size:1.5rem;
       }
       .pad{
         width:80%;

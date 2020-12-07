@@ -302,6 +302,11 @@ nav {
     height: 40%;
  
   }
+  .nav-links a {
+    padding-bottom:20px;
+    padding-top:20px;
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 500px) {

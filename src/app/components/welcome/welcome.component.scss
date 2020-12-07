@@ -12,8 +12,9 @@ body {
   --header2: calc(3.5rem + 1vw);
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
-  --text: calc(3.5rem + 1vw);
+  --text: calc(0.5rem + 1vw);
   --big: calc(6rem + 1vw);
+  --special: calc(1rem + 1vw);
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
@@ -30,12 +31,14 @@ label,
 input,
 a,
 p {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
   font-size: var(--text);
 }
 
 h1 {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
   margin: 0px;
   font-weight: bolder;
   padding-bottom: 10px;
@@ -45,33 +48,38 @@ h1 {
 }
 
 h2 {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
   font-size: var(--header2);
 }
 
 h3 {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
   font-size: var(--header3);
 }
 
 h4,
 h5 {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
   font-size: var(--header4);
 }
 
 ul {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
   list-style: none;
 }
 
 a {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Ruhl";
+  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
   text-decoration: none;
   color: rgba(4, 0, 42, 0.589);
-  font-size: 1.5vw;
   padding-top: 5px;
   padding-bottom: 10px;
+  font-size: var(--text);
 
 }
 
@@ -87,13 +95,11 @@ a {
 
   .Box-Left {
     height: 100%;
-    width: 40%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-
-    .tittle {}
 
     .intro {
       width: 100%;
@@ -101,6 +107,8 @@ a {
       flex-direction: row;
 
       button {
+        font-family: "Ruhl";
+        src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
         width: 200px;
         background-color: #e9dd36;
         border-radius: 3%;
@@ -129,21 +137,19 @@ a {
     }
   }
 
-  .Box-Right {
-    height: 100%;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
+.Box-Right {
+    height: 70%;
+    width: 35%;
+
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    a {
+      padding: 1px;
+      font-size: (var(--special));
+      color: white;
+      text-align: right;
 
-
-    img {
-      opacity: 20%;
-    }
-      a {
-        padding: 1px;
-        font-size: 2.5rem;
     }
   }
 
@@ -151,6 +157,7 @@ a {
 
 //ANIMATIONS
 .animate__fadeInDown1 {
+
   animation: fadeInDown ease 1s;
   -webkit-animation: fadeInDown ease 1s;
   -moz-animation: fadeInDown ease 1s;
@@ -160,34 +167,34 @@ a {
 
 .animate__fadeInDown2 {
   animation: fadeInDown ease s;
+  -webkit-animation: fadeInDown ease 2s;
+  -moz-animation: fadeInDown ease 2s;
+  -o-animation: fadeInDown ease 2s;
+  -ms-animation: fadeInDown ease 2s;
+}
+
+.animate__fadeInDown3 {
+  animation: fadeInDown ease 3s;
+  -webkit-animation: fadeInDown ease 3s;
+  -moz-animation: fadeInDown ease 3s;
+  -o-animation: fadeInDown ease 3s;
+  -ms-animation: fadeInDown ease 3s;
+}
+
+.animate__fadeInDown4 {
+  animation: fadeInDown ease 4s;
   -webkit-animation: fadeInDown ease 4s;
   -moz-animation: fadeInDown ease 4s;
   -o-animation: fadeInDown ease 4s;
   -ms-animation: fadeInDown ease 4s;
 }
 
-.animate__fadeInDown3 {
-  animation: fadeInDown ease 7s;
-  -webkit-animation: fadeInDown ease 7s;
-  -moz-animation: fadeInDown ease 7s;
-  -o-animation: fadeInDown ease 7s;
-  -ms-animation: fadeInDown ease 7s;
-}
-
-.animate__fadeInDown4 {
-  animation: fadeInDown ease 10s;
-  -webkit-animation: fadeInDown ease 10s;
-  -moz-animation: fadeInDown ease 10s;
-  -o-animation: fadeInDown ease 10s;
-  -ms-animation: fadeInDown ease 10s;
-}
-
 .animate__fadeInDown5 {
-  animation: fadeInDown ease 13s;
-  -webkit-animation: fadeInDown ease 13s;
-  -moz-animation: fadeInDown ease 13s;
-  -o-animation: fadeInDown ease 13s;
-  -ms-animation: fadeInDown ease 13s;
+  animation: fadeInDown ease 5s;
+  -webkit-animation: fadeInDown ease 5s;
+  -moz-animation: fadeInDown ease 5s;
+  -o-animation: fadeInDown ease 5s;
+  -ms-animation: fadeInDown ease 5s;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -228,31 +235,36 @@ a {
   .Main-Background {
     flex-direction: column;
 
-    .Box-Left{
-      height:60%;
+    .Box-Left {
+      height: 60%;
       width: 90%;
       text-align: center;
-      a{
-        font-size:1.5rem;
+
+      a {
+        font-size: 1.5rem;
       }
-      .intro{
-        height:100%;
-        width:100%;
+
+      .intro {
+        height: 100%;
+        width: 100%;
         justify-content: center;
         justify-items: center;
         align-items: center;
       }
     }
-    .Box-Right{
-      height:40%;
+
+    .Box-Right {
+      height: 40%;
       width: 90%;
       flex-direction: column;
       justify-content: center;
       justify-items: center;
       align-items: center;
       vertical-align: middle;
-      a{
-        font-size: 2rem;
+      padding-top:30px;
+
+      a {
+        font-size: var(--special);
       }
     }
   }
@@ -260,14 +272,15 @@ a {
   @media screen and (max-width: 842px) {
     .Main-Background {
       flex-direction: column;
-  
-      .Box-Left{
+
+      .Box-Left {
         padding-bottom: 5%;
-       
+
       }
-      .Box-Right{
-       
-        a{
+
+      .Box-Right {
+
+        a {
           font-size: 1.5rem;
         }
       }
@@ -279,13 +292,14 @@ a {
   .Main-Background {
     flex-direction: column;
 
-    .Box-Left{
+    .Box-Left {
       padding-bottom: 5%;
-     
+
     }
-    .Box-Right{
-     
-      a{
+
+    .Box-Right {
+
+      a {
         font-size: 1.2rem;
       }
     }
