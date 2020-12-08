@@ -83,7 +83,7 @@ body {
     }
     .Gallery {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12, 10vw);
+        grid-template-rows: repeat(13, 10vw);
         grid-row-gap: 20px;
         grid-column-gap: 50px;
     }
@@ -91,21 +91,15 @@ body {
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    .faq-question--2 {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 3;
         grid-row-end: 4;
     }
-    .faq-question--3 {
+    .faq-question--2 {
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 5;
         grid-row-end: 6;
     }
-    .faq-question--4 {
+    .faq-question--3 {
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 7;
