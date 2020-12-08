@@ -1,5 +1,5 @@
 body {
-    height: 5000px;
+    height: 4000px;
     width: 100%;
     background: rgba($color: #E8DFDF, $alpha: 1.0);
     display: flex;
@@ -16,7 +16,6 @@ body {
     --gray-text: #525252;
     scroll-behavior: smooth;
     background: rgb(255, 255, 255);
-
 }
 
 li,
@@ -102,29 +101,103 @@ p {
     align-items: center;
     background: rgba(246, 246, 246, 0.678);
     text-align: center;
-
     .img-1 {
         width: 80%;
     }
-
     .right {
         width: 65%;
     }
-
     .left {
         width: 35%;
     }
 }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    height: 25%;
+    width: 25%;
+    background: rgb(1, 2, 34);
+    color: white;
+    cursor: pointer;
+    a {
+        color: white;
+        font-size: 1rem;
+    }
+}
+
 .Section {
     height: 20%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     vertical-align: middle;
     align-items: center;
     background: rgba(255, 255, 255, 0.945);
     text-align: center;
-
+    .Box-Middle {
+        flex-direction: column;
+    }
+    .bottom {
+        height: 60%;
+        width: 100%;
+        .gallery {
+            height: 60%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 30%);
+            grid-template-rows: repeat(1, 80%);
+            grid-gap: 0rem;
+            justify-items: center;
+            justify-content: center;
+            img {
+                width: 30px;
+                height: 30px;
+                padding: 0%;
+                margin: 0%;
+            }
+            .gallery__item {
+                background: white;
+                border-radius: 3%;
+                box-shadow: 3px 3px 3px 3px #aaaaaa;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                justify-items: center;
+                vertical-align: middle;
+                width: 80%;
+                height:100% p {
+                    padding: 0%;
+                    margin: 0%;
+                    text-align: center;
+                    width: 80%;
+                }
+            }
+        }
+    }
+    .top {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .Section-2 {
@@ -137,12 +210,10 @@ p {
     align-items: center;
     background: rgb(255, 255, 255);
     text-align: center;
-
     .Box-2 {
         display: flex;
         flex-direction: column;
         height: 90%;
-
         .top {
             height: 30%;
             width: 100%;
@@ -152,7 +223,6 @@ p {
             align-content: center;
             vertical-align: middle;
         }
-
         .bottom {
             height: 70%;
             width: 100%;
@@ -161,7 +231,6 @@ p {
             vertical-align: middle;
             align-items: center;
             align-content: center;
-
             .gallery {
                 height: 50%;
                 width: 100%;
@@ -171,8 +240,6 @@ p {
                 grid-gap: 0rem;
                 justify-items: center;
                 justify-content: center;
-
-
                 img {
                     width: 30px;
                     height: 30px;
@@ -180,11 +247,11 @@ p {
                     margin: 0%;
                 }
             }
-
             .gallery__item {
                 background: white;
                 border-radius: 3%;
-                box-shadow: 10px 10px 5px 5px #aaaaaa;                display: flex;
+                box-shadow: 3px 3px 3px 3px #aaaaaa;
+                display: flex;
                 flex-direction: column;
                 align-content: center;
                 justify-content: center;
@@ -192,8 +259,6 @@ p {
                 justify-items: center;
                 vertical-align: middle;
                 width: 80%;
-
-
                 p {
                     padding: 0%;
                     margin: 0%;
@@ -201,38 +266,31 @@ p {
                     width: 80%;
                 }
             }
-
             .gallery__item--1 {
                 grid-column-start: 1;
                 grid-column-end: 1;
                 grid-row-start: 1;
                 grid-row-end: 1;
             }
-
             .gallery__item--2 {
                 grid-column-start: 2;
                 grid-column-end: 2;
                 grid-row-start: 1;
                 grid-row-end: 1;
             }
-
             .gallery__item--3 {
                 grid-column-start: 3;
                 grid-column-end: 3;
                 grid-row-start: 1;
                 grid-row-end: 1;
             }
-
             .img-2 {
                 padding-top: 5%;
                 height: 30%;
                 width: 100%;
             }
         }
-
-
     }
-
 }
 
 .Section-3 {
@@ -249,7 +307,6 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     .Box-Middle {
         width: 80%;
         display: flex;
@@ -259,7 +316,6 @@ p {
         align-items: center;
         text-align: center;
         height: 80%;
-
         .top {
             display: flex;
             flex-direction: column;
@@ -268,17 +324,14 @@ p {
             align-items: center;
             text-align: center;
             height: 20%;
-
             .title {
                 height: 30%;
             }
         }
-
         .content {
             height: 80%;
-
             .structure {
-                width:80%;
+                width: 80%;
             }
         }
     }
@@ -291,14 +344,11 @@ p {
     flex-direction: column;
     vertical-align: middle;
     align-items: center;
-
-
     .Box-Middle {
         display: flex;
         flex-direction: column;
         align-content: center;
         vertical-align: middle;
-
         .container {
             display: flex;
             flex-direction: row;
@@ -310,7 +360,6 @@ p {
             justify-items: center;
             vertical-align: middle;
         }
-
         .text {
             height: 40%;
             width: 100%;
@@ -322,21 +371,16 @@ p {
             justify-items: center;
             vertical-align: middle;
         }
-
         img {
             width: 50%;
         }
-
         .gallery {
             width: 50%;
             display: grid;
             grid-template-columns: repeat(1, 2fr);
             grid-template-rows: repeat(3, 8vw);
             grid-gap: 0rem;
-
-
         }
-
         .gallery__item {
             padding: 0%;
             margin: 0%;
@@ -347,37 +391,29 @@ p {
             align-items: center;
             justify-items: center;
             vertical-align: middle;
-
             img {
-                width: 50px;
+                width: 40px;
                 padding: 10%;
                 margin: 0%;
             }
-
             p {
                 padding: 0%;
                 margin: 0%;
                 text-align: left;
-
             }
-
         }
-
-
         .gallery__item--1 {
             grid-column-start: 1;
             grid-column-end: 1;
             grid-row-start: 1;
             grid-row-end: 1;
         }
-
         .gallery__item--2 {
             grid-column-start: 1;
             grid-column-end: 1;
             grid-row-start: 2;
             grid-row-end: 2;
         }
-
         .gallery__item--3 {
             grid-column-start: 1;
             grid-column-end: 1;
@@ -387,73 +423,87 @@ p {
     }
 }
 
-
 //Section Middle
-
-
 //RESPONSIVE
 @media screen and (max-width: 1300px) {
     .Main-Background {
         h1 {
             font-size: 2.6rem;
         }
-
         p {
             font-size: 1.2rem;
         }
-
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            height: 23%;
+            width: 15%;
+            background: rgb(1, 2, 34);
+            color: white;
+            a {
+                color: white;
+                font-size: 1rem;
+            }
+        }
+        .Section {
+            .tooltip:hover .tooltiptext {
+                height: 23%;
+                width: 33%;
+            }
+            .Box-Middle {
+                width: 90%;
+                .content {
+                    height: 90%;
+                }
+            }
+            .gallery {
+                grid-template-columns: repeat(3, 33%);
+                grid-template-rows: repeat(1, 80%);
+                .gallery__item {
+                    width: 100;
+                    padding: 0%;
+                    height: 80%;
+                }
+            }
+        }
         .Section-1 {
             display: flex;
             flex-direction: column;
-
             .Box-Middle {
                 flex-direction: column;
                 width: 90%;
             }
-
             .img-1 {
                 width: 90%;
             }
-
             .left {
                 width: 90%;
-
             }
-
             .right {
                 width: 90%;
             }
         }
-
         .Section-2 {
             .Box-Middle {
                 width: 90%;
-
                 .top {
                     height: 40%;
                 }
-
                 .bottom {
                     height: 60%;
-
                     p {
                         font-size: 1rem;
                     }
                 }
             }
         }
-
         .Section-3 {
             .Box-Middle {
                 width: 90%;
-
-                .content{
-                    height:90%;
+                .content {
+                    height: 90%;
                 }
-
             }
         }
-
         .Section-4 {
             height: 25%;
             width: 100%;
@@ -463,174 +513,128 @@ p {
             align-items: center;
             .Box-Middle {
                 width: 90%;
-
                 .container {
                     width: 100%;
                     height: 90%;
                 }
-
                 .text {
                     height: 40%;
-
                     h1 {
                         padding: 0%;
                         margin: 0%;
                     }
-
                 }
-
                 .middle {
                     height: 70%;
                     width: 100%;
                 }
-
                 .img-3 {
                     width: 50%;
                 }
-
                 .gallery {
                     width: 50%;
                     display: grid;
                     grid-template-columns: repeat(1, 2fr);
                     grid-template-rows: repeat(3, 7vw);
-                    p{
+                    p {
                         font-size: 1.2rem;
                     }
                 }
-
                 .gallery__item {
-
                     img {
                         width: 30px;
                         padding: 10%;
                         margin: 0%;
                     }
-
-
                 }
-
             }
         }
-
     }
 }
 
 @media screen and (max-width: 842px) {
-
-    body{
+    body {
         height: 4000px;
-       }
-         .Main-Background {
-            p{
-                font-size: 1rem;
-            }
-            h1{
-                font-size:1.5rem;
-            }
-        .Section-3 {
-
+    }
+    .Main-Background {
+        p {
+            font-size: 1rem;
         }
+        h1 {
+            font-size: 1.5rem;
+        }
+        .Section-3 {}
         .Section-4 {
-
             .Box-Middle {
                 width: 90%;
-
                 .container {
                     width: 100%;
                     height: 90%;
                 }
-
                 .text {
                     height: 50%;
-                    padding-bottom:20px;
-
+                    padding-bottom: 20px;
                     h1 {
                         padding: 0%;
                         margin: 0%;
                     }
                 }
-
                 .middle {
                     height: 50%;
                     width: 100%;
                 }
-
                 .img-3 {
                     width: 50%;
                 }
-
                 .gallery {
                     width: 50%;
                     display: grid;
                     grid-template-columns: repeat(1, 2fr);
                     grid-template-rows: repeat(3, 7vw);
-
                 }
-
                 .gallery__item {
-
                     img {
                         width: 30px;
                         padding: 10%;
                         margin: 0%;
                     }
-
-
                 }
-
             }
         }
-
-        
-
     }
 }
 
-
 @media screen and (max-width: 500px) {
-
     .Main-Background {
         .Section-2 {
             .Box-Middle {
                 width: 80%;
-
                 .top {
                     height: 50%;
                 }
-
                 .bottom {
                     height: 50%;
-
                     .gallery {
                         width: 100%;
-
                         grid-template-columns: repeat(3, 35%);
                         grid-template-rows: repeat(1, 80%);
                     }
-
                     p {
                         font-size: 0.5rem;
                     }
                 }
             }
         }
-
         .Section-3 {
             .Box-Middle {
                 width: 100%;
-
                 .title {}
-
                 .structure {
                     padding-top: 20%;
                     height: 40%;
                 }
-
-
-
             }
         }
-
         .Section-4 {
             height: 25%;
             width: 100%;
@@ -638,10 +642,8 @@ p {
             flex-direction: column;
             vertical-align: middle;
             align-items: center;
-
             .Box-Middle {
                 width: 80%;
-
                 .container {
                     width: 100%;
                     height: 90%;
@@ -650,16 +652,13 @@ p {
                     vertical-align: middle;
                     align-items: center;
                 }
-
                 .text {
                     height: 40%;
-
                     h1 {
                         padding: 0%;
                         margin: 0%;
                     }
                 }
-
                 .middle {
                     height: 60%;
                     width: 100%;
@@ -668,11 +667,9 @@ p {
                     vertical-align: middle;
                     align-items: center;
                 }
-
                 .img-3 {
                     width: 100%;
                 }
-
                 .gallery {
                     width: 100%;
                     padding-top: 10%;
@@ -680,20 +677,14 @@ p {
                     grid-template-columns: repeat(1, 2fr);
                     grid-template-rows: repeat(5, 13vw);
                 }
-
                 .gallery__item {
-
                     img {
                         width: 30px;
                         padding: 10%;
                         margin: 0%;
                     }
-
-
                 }
-
             }
         }
-
     }
 }

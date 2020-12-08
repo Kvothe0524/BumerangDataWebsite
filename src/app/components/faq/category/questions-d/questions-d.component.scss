@@ -1,0 +1,130 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Ruhl", sans-serif;
+    display: flex;
+    padding-top: 100px;
+}
+
+.side-nav {
+    width: 10%;
+}
+
+.Gallery p {
+    text-align: justify;
+}
+
+.Box {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    padding-bottom: 23em;
+}
+
+.faq-title {
+    width: 100%;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 3em;
+}
+
+.faq-question-title {
+    font-size: 1.4em;
+}
+
+.Gallery {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 5vw);
+    grid-row-gap: 250px;
+    grid-column-gap: 50px;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1540px) {
+    .Gallery {
+        grid-row-gap: 300px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .Gallery {
+        grid-row-gap: 400px;
+    }
+    .faq-title {
+        padding-bottom: 0.5em;
+    }
+    .Box {
+        padding-bottom: 30em;
+    }
+}
+
+@media (max-width: 1100px) {
+    .faq-title {
+        padding-bottom: 1em;
+    }
+    .Box {
+        padding-bottom: 8em;
+    }
+    .Gallery {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 10vw);
+        grid-row-gap: 20px;
+        grid-column-gap: 50px;
+    }
+    .faq-question--1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .faq-question--2 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .faq-question--3 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .faq-question--4 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 7;
+        grid-row-end: 8;
+    }
+    .faq-question--5 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 9;
+        grid-row-end: 10;
+    }
+    .faq-question--6 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 11;
+        grid-row-end: 12;
+    }
+}
+
+@media (max-width: 700px) {}
+
+@media (max-width: 800px) {
+    .Gallery {
+        grid-template-rows: repeat(12, 8%);
+    }
+    .Box {
+        width: 100%;
+    }
+}

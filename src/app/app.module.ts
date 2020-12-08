@@ -21,6 +21,12 @@ import { SolucionComponent } from './components/solucion/solucion.component';
 import { ParticlesModule } from 'angular-particle';
 
 import {  HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { QuestionsAComponent } from './components/faq/category/questions-a/questions-a.component';
+import { QuestionsBComponent } from './components/faq/category/questions-b/questions-b.component';
+import { QuestionsCComponent } from './components/faq/category/questions-c/questions-c.component';
+import { QuestionsDComponent } from './components/faq/category/questions-d/questions-d.component';
+import { QuestionsEComponent } from './components/faq/category/questions-e/questions-e.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +42,12 @@ import {  HashLocationStrategy, LocationStrategy} from '@angular/common';
     ContactComponent,
     ExpComponent,
     CotizarComponent,
-    SolucionComponent
+    SolucionComponent,
+    QuestionsAComponent,
+    QuestionsBComponent,
+    QuestionsCComponent,
+    QuestionsDComponent,
+    QuestionsEComponent
   
   ],
   imports: [
@@ -44,7 +55,9 @@ import {  HashLocationStrategy, LocationStrategy} from '@angular/common';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ParticlesModule
+    ParticlesModule,
+    BrowserAnimationsModule
+
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
