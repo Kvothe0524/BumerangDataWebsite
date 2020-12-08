@@ -107,3 +107,13 @@ body {
         }
     }
 }
+
+@media (max-width: 350px) {
+    .Nav-Links {
+        a {
+            font-size: 0.7rem;
+            padding: 2px;
+            text-align: center;
+        }
+    }
+}
