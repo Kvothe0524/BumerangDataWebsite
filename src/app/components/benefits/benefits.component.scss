@@ -168,7 +168,7 @@ p {
             justify-items: center;
             justify-content: center;
             img {
-                width: 40px;
+                width: 50px;
                 padding: 10%;
                 margin: 0%;
             }
@@ -325,15 +325,161 @@ p {
             vertical-align: middle;
             align-items: center;
             text-align: center;
-            height: 20%;
-            .title {
-                height: 30%;
+            height: 5%;
+        }
+        //THIS IS THE DIAGRAM STRUCTURE
+        .content {
+            width: 80%;
+            height: 95%;
+            //GRID
+            display: grid;
+            grid-template-columns: repeat(3, 33%);
+            grid-template-rows: repeat(10, 10%);
+            grid-gap: 0rem;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            p {
+                margin: 0;
+                padding: 3px;
+                &:hover {
+                    text-decoration: underline;
+                    background: rgb(1, 2, 34);
+                    color: white;
+                    cursor: pointer;
+                    width: 100%;
+                }
             }
         }
-        .content {
+        .gallery__item {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .text {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            border-radius: 3%;
+            vertical-align: middle;
+            display: flex;
+            box-shadow: 3px 3px 3px 3px #1b1b1b7e;
+            flex-direction: column;
+            height: 100%;
+            width: 80%;
+        }
+        //GRID ITEMS - TITLE
+        .gallery__item--1 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        .gallery__item--2 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 2;
+            img {
+                width: 40%;
+                padding-bottom: 3%;
+            }
+        }
+        //GRID ITEMS - TOP SIDE
+        .gallery__item--3 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            img {
+                width: 40%;
+                padding: 0;
+                margin: 0;
+                padding-left: 40%;
+            }
+        }
+        .gallery__item--4 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            padding-top: 20%;
+        }
+        .gallery__item--5 {
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 3;
+            img {
+                width: 40%;
+                padding: 0;
+                margin: 0;
+                padding-right: 40%;
+            }
+        }
+        //GRID ITEMS - MID SIDE
+        .gallery__item--6 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 4;
+            grid-row-end: 9;
+            background: white;
+            border-radius: 3%;
+            vertical-align: middle;
+            display: flex;
+            box-shadow: 3px 3px 3px 3px #1b1b1b7e;
+            flex-direction: column;
             height: 80%;
-            .structure {
-                width: 80%;
+        }
+        .gallery__item--7 {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 9;
+            background: white;
+            border-radius: 3%;
+            vertical-align: middle;
+            display: flex;
+            box-shadow: 3px 3px 3px 3px #1b1b1b7e;
+            flex-direction: column;
+            height: 80%;
+        }
+        //GRID ITEMS - BOT SIDE
+        .gallery__item--8 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 9;
+            grid-row-end: 10;
+            img {
+                width: 40%;
+                padding: 0;
+                margin: 0;
+                padding-left: 40%;
+            }
+        }
+        .gallery__item--9 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 9;
+            grid-row-end: 10;
+        }
+        .gallery__item--10 {
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 9;
+            grid-row-end: 10;
+            img {
+                width: 40%;
+                padding: 0;
+                margin: 0;
+                padding-right: 40%;
             }
         }
     }
@@ -450,6 +596,9 @@ p {
             .tooltip:hover .tooltiptext {
                 height: 23%;
                 width: 33%;
+                a {
+                    font-size: 0.8rem;
+                }
             }
             .Box-Middle {
                 width: 90%;
@@ -496,14 +645,7 @@ p {
                 }
             }
         }
-        .Section-3 {
-            .Box-Middle {
-                width: 90%;
-                .content {
-                    height: 90%;
-                }
-            }
-        }
+        .Section-3 {}
         .Section-4 {
             height: 25%;
             width: 100%;
@@ -563,7 +705,34 @@ p {
         h1 {
             font-size: 1.5rem;
         }
-        .Section-3 {}
+        .Section-3 {
+            height: 10%;
+            .Box-Middle {
+                width: 90%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .content {
+                height: 100%;
+                width: 90%;
+                //GRID
+                display: grid;
+                grid-template-columns: repeat(3, 35%);
+                grid-template-rows: repeat(10, 10%);
+                grid-gap: 0rem;
+                justify-content: center;
+                align-items: center;
+                vertical-align: middle;
+                p {
+                    font-size: 0.7rem;
+                    margin: 0;
+                    padding: 3px;
+                }
+            }
+        }
         .Section-4 {
             .Box-Middle {
                 width: 90%;
@@ -627,8 +796,11 @@ p {
         }
         .Section-3 {
             .Box-Middle {
-                width: 100%;
-                .title {}
+                p {
+                    font-size: 0.5rem;
+                    margin: 0;
+                    padding: 1px;
+                }
                 .structure {
                     padding-top: 20%;
                     height: 40%;
