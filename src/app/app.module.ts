@@ -27,6 +27,7 @@ import { QuestionsCComponent } from './components/faq/category/questions-c/quest
 import { QuestionsDComponent } from './components/faq/category/questions-d/questions-d.component';
 import { QuestionsEComponent } from './components/faq/category/questions-e/questions-e.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './components/login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     QuestionsBComponent,
     QuestionsCComponent,
     QuestionsDComponent,
-    QuestionsEComponent
+    QuestionsEComponent,
+    LoginComponent
   
   ],
   imports: [

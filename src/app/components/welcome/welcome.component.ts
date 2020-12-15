@@ -15,7 +15,7 @@ export class WelcomeComponent implements OnInit {
   myStyle: Object = {
     'position': 'absolute',
     'width': '100%',
-    'height': '100%',
+    'height': '80%',
     'z-index': 10,
     'top': 0,
     'left': 0,
@@ -42,16 +42,16 @@ export class WelcomeComponent implements OnInit {
         "image": {
           "src": "img/github.svg",
           "width": 100,
-          "height": 100
+          "height": 30
         }
       },
       "opacity": {
-        "value": 0.8,
+        "value": 1,
         "random": false,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 1,
-          "opacity_min": 0.1,
+          "opacity_min": 1,
           "sync": false
         }
       },
@@ -69,7 +69,7 @@ export class WelcomeComponent implements OnInit {
         "enable": true,
         "distance": 150,
         "color": "#FFFFFF",
-        "opacity": 0.4,
+        "opacity": 0.2,
         "width": 2
       },
       "move": {
