@@ -15,7 +15,7 @@ export class WelcomeComponent implements OnInit {
   myStyle: Object = {
     'position': 'absolute',
     'width': '100%',
-    'height': '90%',
+    'height': '100%',
     'z-index': 10,
     'top': 0,
     'left': 0,
@@ -25,7 +25,7 @@ export class WelcomeComponent implements OnInit {
   myParams: object = {
     "particles": {
       "number": {
-        "value": 80,
+        "value": 120,
         "density": {
           "enable": true,
           "value_area": 800

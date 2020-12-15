@@ -1,29 +1,24 @@
 body {
-  min-height: 850px;
-  width: 100%;
-  padding-bottom: 75px;
-  background: rgba($color: #E8DFDF, $alpha: 1.0);
-  display: flex;
-  justify-content: space-around;
-  vertical-align: middle;
-  align-items: center;
-  font-size: 100%;
-  --header1: calc(2rem + 1vw);
-  --header2: calc(3.5rem + 1vw);
-  --header3: calc(3rem + 1vw);
-  --header4: calc(2.4rem + 1vw);
-  --text: calc(0.5rem + 1vw);
-  --big: calc(6rem + 1vw);
-  --special: calc(1rem + 1vw);
-  --special-color: #906272;
-  --background-color: #414141;
-  --gray-text: #525252;
-  scroll-behavior: smooth;
-  background-image: url(/assets/img/Background3.png);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
+    min-height: 850px;
+    width: 100%;
+    background: rgba($color: #E8DFDF, $alpha: 1.0);
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 100%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(0.5rem + 1vw);
+    --big: calc(6rem + 1vw);
+    --special: calc(1rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --gray-text: #525252;
+    scroll-behavior: smooth;
+    background: rgb(2, 27, 73);
 }
 
 li,
@@ -31,277 +26,257 @@ label,
 input,
 a,
 p {
-  font-family: "Ruhl";
-  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-  font-size: var(--text);
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: var(--text);
 }
 
 h1 {
-  font-family: "Ruhl";
-  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-  margin: 0px;
-  font-weight: bolder;
-  padding-bottom: 10px;
-  font-size: var(--header1);
-  color: white;
-  text-shadow: 2px 2px #2a2a2a41;
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    margin: 0px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    font-size: var(--header1);
+    color: white;
+    text-shadow: 2px 2px #2a2a2a41;
 }
 
 h2 {
-  font-family: "Ruhl";
-  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-  font-size: var(--header2);
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: var(--header2);
 }
 
 h3 {
-  font-family: "Ruhl";
-  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-  font-size: var(--header3);
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: var(--header3);
 }
 
 h4,
 h5 {
-  font-family: "Ruhl";
-  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-  font-size: var(--header4);
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: var(--header4);
 }
 
 ul {
-  font-family: "Ruhl";
-  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-  list-style: none;
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    list-style: none;
 }
 
 a {
-  font-family: "Ruhl";
-  src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-  text-decoration: none;
-  color: rgba(4, 0, 42, 0.589);
-  padding-top: 5px;
-  padding-bottom: 10px;
-  font-size: var(--text);
-
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    text-decoration: none;
+    color: rgba(4, 0, 42, 0.589);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: var(--text);
 }
 
 .Main-Background {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  vertical-align: middle;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  justify-items: center;
-
-  .Box-Left {
     height: 100%;
-    width: 35%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
     justify-content: center;
-    text-align: left;
-
-    .intro {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-
-      button {
-        font-family: "Ruhl";
-        src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-        width: 200px;
-        background-color: #e9dd36;
-        border-radius: 3%;
-        border-color: #e8dfdf00;
-        color: black;
-        padding: 5px;
-        text-align: center;
-        text-decoration: none;
-        font-weight: bolder;
-        font-size: 20px;
-        z-index: 150;
-        margin: 4px 2px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-right: 20px;
-        cursor: pointer;
-        -webkit-transition-duration: 0.4s;
-        transition-duration: 0.4s;
-        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.452);
-
-        &:hover {
-          box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(232, 255, 21, 0.486);
-          background-color: #e9dd36;
+    justify-items: center;
+    .Box-Left {
+        height: 100%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        a {
+            color: rgba(255, 255, 255, 0.712);
         }
-      }
+        .title {
+            margin-bottom: 100px;
+        }
+        .intro {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            button {
+                font-family: "Ruhl";
+                src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+                width: 200px;
+                background-color: #e9dd36;
+                border-radius: 3%;
+                border-color: #e8dfdf00;
+                color: black;
+                padding: 5px;
+                text-align: center;
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 20px;
+                z-index: 150;
+                margin: 4px 2px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-right: 20px;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.452);
+                &:hover {
+                    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(232, 255, 21, 0.486);
+                    background-color: #e9dd36;
+                }
+            }
+        }
     }
-  }
-
-.Box-Right {
-    height: 70%;
-    width: 35%;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    a {
-      padding: 1px;
-      font-size: (var(--special));
-      color: white;
-      text-align: right;
-
+    .Box-Right {
+        height: 70%;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        a {
+            padding: 1px;
+            font-size: (var(--special));
+            color: white;
+            text-align: right;
+        }
     }
-  }
-
 }
 
 //ANIMATIONS
 .animate__fadeInDown1 {
-
-  animation: fadeInDown ease 1s;
-  -webkit-animation: fadeInDown ease 1s;
-  -moz-animation: fadeInDown ease 1s;
-  -o-animation: fadeInDown ease 1s;
-  -ms-animation: fadeInDown ease 1s;
+    animation: fadeInDown ease 1s;
+    -webkit-animation: fadeInDown ease 1s;
+    -moz-animation: fadeInDown ease 1s;
+    -o-animation: fadeInDown ease 1s;
+    -ms-animation: fadeInDown ease 1s;
 }
 
 .animate__fadeInDown2 {
-  animation: fadeInDown ease s;
-  -webkit-animation: fadeInDown ease 2s;
-  -moz-animation: fadeInDown ease 2s;
-  -o-animation: fadeInDown ease 2s;
-  -ms-animation: fadeInDown ease 2s;
+    animation: fadeInDown ease s;
+    -webkit-animation: fadeInDown ease 2s;
+    -moz-animation: fadeInDown ease 2s;
+    -o-animation: fadeInDown ease 2s;
+    -ms-animation: fadeInDown ease 2s;
 }
 
 .animate__fadeInDown3 {
-  animation: fadeInDown ease 3s;
-  -webkit-animation: fadeInDown ease 3s;
-  -moz-animation: fadeInDown ease 3s;
-  -o-animation: fadeInDown ease 3s;
-  -ms-animation: fadeInDown ease 3s;
+    animation: fadeInDown ease 3s;
+    -webkit-animation: fadeInDown ease 3s;
+    -moz-animation: fadeInDown ease 3s;
+    -o-animation: fadeInDown ease 3s;
+    -ms-animation: fadeInDown ease 3s;
 }
 
 .animate__fadeInDown4 {
-  animation: fadeInDown ease 4s;
-  -webkit-animation: fadeInDown ease 4s;
-  -moz-animation: fadeInDown ease 4s;
-  -o-animation: fadeInDown ease 4s;
-  -ms-animation: fadeInDown ease 4s;
+    animation: fadeInDown ease 4s;
+    -webkit-animation: fadeInDown ease 4s;
+    -moz-animation: fadeInDown ease 4s;
+    -o-animation: fadeInDown ease 4s;
+    -ms-animation: fadeInDown ease 4s;
 }
 
 .animate__fadeInDown5 {
-  animation: fadeInDown ease 5s;
-  -webkit-animation: fadeInDown ease 5s;
-  -moz-animation: fadeInDown ease 5s;
-  -o-animation: fadeInDown ease 5s;
-  -ms-animation: fadeInDown ease 5s;
+    animation: fadeInDown ease 5s;
+    -webkit-animation: fadeInDown ease 5s;
+    -moz-animation: fadeInDown ease 5s;
+    -o-animation: fadeInDown ease 5s;
+    -ms-animation: fadeInDown ease 5s;
 }
 
 @-webkit-keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .animate__fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
 }
 
 //RESPONSIVE
 @media screen and (max-width: 1200px) {
-  .Main-Background {
-    flex-direction: column;
-
-    .Box-Left {
-      height: 60%;
-      width: 90%;
-      text-align: center;
-
-      a {
-        font-size: 1.5rem;
-      }
-
-      .intro {
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-      }
-    }
-
-    .Box-Right {
-      height: 40%;
-      width: 90%;
-      flex-direction: column;
-      justify-content: center;
-      justify-items: center;
-      align-items: center;
-      vertical-align: middle;
-      padding-top:30px;
-
-      a {
-        font-size: var(--special);
-      }
-    }
-  }
-
-  @media screen and (max-width: 842px) {
     .Main-Background {
-      flex-direction: column;
-
-      .Box-Left {
-        padding-bottom: 5%;
-
-      }
-
-      .Box-Right {
-
-        a {
-          font-size: 1.5rem;
+        flex-direction: column;
+        .Box-Left {
+            height: 60%;
+            width: 90%;
+            text-align: center;
+            a {
+                font-size: 1.5rem;
+            }
+            .intro {
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                justify-items: center;
+                align-items: center;
+            }
         }
-      }
+        .Box-Right {
+            height: 40%;
+            width: 90%;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            vertical-align: middle;
+            padding-top: 30px;
+            a {
+                font-size: var(--special);
+            }
+        }
     }
-  }
+    @media screen and (max-width: 842px) {
+        .Main-Background {
+            flex-direction: column;
+            .Box-Left {
+                padding-bottom: 5%;
+            }
+            .Box-Right {
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .Main-Background {
-    flex-direction: column;
-
-    .Box-Left {
-      padding-bottom: 5%;
-
+    .Main-Background {
+        flex-direction: column;
+        .Box-Left {
+            padding-bottom: 5%;
+        }
+        .Box-Right {
+            a {
+                font-size: 1.2rem;
+            }
+        }
     }
-
-    .Box-Right {
-
-      a {
-        font-size: 1.2rem;
-      }
-    }
-  }
 }
