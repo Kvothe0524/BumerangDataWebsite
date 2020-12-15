@@ -26,20 +26,22 @@ body {
     align-items: left;
     list-style: none;
     cursor: pointer;
+    border: none;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
     a {
+        border: none;
         text-align: left;
         color: rgb(0, 0, 0);
         &:hover {
             background: rgba(1, 2, 34, 0.61);
-            animation: fadeIn ease 0.8s;
-            -webkit-animation: fadeIn ease 0.8s;
             color: white;
             padding: 10px;
             border-radius: 3px;
+            border: none;
         }
     }
     li {
+        border: none;
         text-align: left;
         padding-bottom: 10px;
     }
