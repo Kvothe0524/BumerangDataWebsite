@@ -15,7 +15,11 @@ body {
     --background-color: #414141;
     --gray-text: #525252;
     scroll-behavior: smooth;
-    background: rgb(255, 255, 255);
+    background-image: url(/assets/img/Background2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 li,
@@ -306,11 +310,6 @@ p {
     vertical-align: middle;
     align-items: center;
     text-align: center;
-    background-image: url(/assets/img/Background2.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     .Box-Middle {
         width: 80%;
         display: flex;
@@ -494,6 +493,7 @@ p {
     flex-direction: column;
     vertical-align: middle;
     align-items: center;
+    background: white;
     .Box-Middle {
         display: flex;
         flex-direction: column;

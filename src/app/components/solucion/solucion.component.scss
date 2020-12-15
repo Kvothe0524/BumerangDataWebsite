@@ -18,8 +18,11 @@ body {
     --background-color: #414141;
     --gray-text: #525252;
     scroll-behavior: smooth;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(29, 83, 111, 1) 47%, rgba(255, 255, 255, 0.4066001400560224) 100%);
+    background-image: url(/assets/img/Buildings.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 li,
@@ -33,13 +36,13 @@ p {
 }
 
 strong {
-    color: white;
+    color: cont;
 }
 
 .subtitle {
     font-weight: lighter;
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.589);
+    color: rgb(11, 7, 31);
 }
 
 h1 {
@@ -47,7 +50,7 @@ h1 {
     src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
     margin: 0px;
     font-size: var(--header1);
-    color: white;
+    color: black;
 }
 
 h2 {
@@ -80,7 +83,6 @@ ul {
 }
 
 .Box-Middle {
-    padding-top: 200px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -96,12 +98,13 @@ ul {
 }
 
 .Main-Background {
-    height: 100%;
-    width: 80%;
+    height: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     vertical-align: middle;
     align-items: center;
+    padding-top: 50px;
 }
 
 //FADE OUT EFFECT  

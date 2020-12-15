@@ -17,6 +17,7 @@ import { QuestionsBComponent } from './components/faq/category/questions-b/quest
 import { QuestionsCComponent } from './components/faq/category/questions-c/questions-c.component';
 import { QuestionsDComponent } from './components/faq/category/questions-d/questions-d.component';
 import { QuestionsEComponent } from './components/faq/category/questions-e/questions-e.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', component: BodyComponent },
@@ -42,7 +43,9 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'cotizar', component: CotizarComponent },
   { path: 'solucion', component: SolucionComponent },
-  { path: 'nosotros', component: AboutusComponent }
+  { path: 'nosotros', component: AboutusComponent },
+  { path: 'usuarios', component: LoginComponent}
+  
 ];
 
 @NgModule({

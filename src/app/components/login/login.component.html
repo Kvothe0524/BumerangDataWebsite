@@ -1,0 +1,58 @@
+<body>
+    <section class="Container">
+        <form [formGroup]="form" novalidate>
+            <div class="Top-Title">
+                <h1 class="Contact">BumerangData</h1>
+            </div>
+            <div class="wrapper">
+                <div class="form">
+                    <div class="input-form">
+
+                        <div class="input">
+                            <input type="text" placeholder="Nombre" formControlName="name">
+
+                            <div class="validacion" *ngIf="name.errors && name.touched">
+                                <div *ngIf="name.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="name.hasError('minlength')">
+                                    Ingrese 3 caracteres como minimo
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input">
+                            <input type="text" placeholder="Email - micorreo@gmail.com" formControlName="email">
+
+                            <div class="validacion" *ngIf="email.errors && email.touched">
+                                <div *ngIf="email.hasError('required')">
+                                    Es un campo requerido
+                                </div>
+                                <div *ngIf="email.hasError('minlength')">
+                                    Ingrese 5 caracteres como minimo
+                                </div>
+                                <div *ngIf="email.hasError('pattern')">
+                                    Ingrese un correo valido
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <button type="submit" class="btn">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+        <!--      <div class="text">
+  <h1>Teléfono</h1> 
+            <p>+56 9 5955 8599</p>-->
+
+        <!-- <h1>Oficina</h1>
+            <p>Santiago, Ñuñoa</p> 
+        </div>-->
+    </section>
+</body>
