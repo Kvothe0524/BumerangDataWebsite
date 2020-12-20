@@ -18,17 +18,19 @@ import { QuestionsCComponent } from './components/faq/category/questions-c/quest
 import { QuestionsDComponent } from './components/faq/category/questions-d/questions-d.component';
 import { QuestionsEComponent } from './components/faq/category/questions-e/questions-e.component';
 import { LoginComponent } from './components/login/login.component';
+import { SectionAComponent } from './components/benefits/sections/section-a/section-a.component';
+import { SectionBComponent } from './components/benefits/sections/section-b/section-b.component';
+import { SectionCComponent } from './components/benefits/sections/section-c/section-c.component';
+import { SectionDComponent } from './components/benefits/sections/section-d/section-d.component';
+import { SectionEComponent } from './components/benefits/sections/section-e/section-e.component';
 
 const routes: Routes = [
   { path: '', component: BodyComponent },
   { path: 'components/welcome', component: WelcomeComponent },
   { path: 'components/introduction', component: IntroductionComponent },
-  { path: 'components/benefits', component: BenefitsComponent },
   { path: 'components/aboutus', component: AboutusComponent },
   { path: 'components/services', component: ServicesComponent },
   //FAQ COMPONENTS
-
-
   { path: 'components/faq', component: FaqComponent,
     children: [
       { path: 'questions-a', component: QuestionsAComponent },
@@ -38,7 +40,16 @@ const routes: Routes = [
       { path: 'questions-e', component: QuestionsEComponent },
     ]
   },
-
+  //BENEFITS COMPONENTS
+  { path: 'components/benefits', component: BenefitsComponent,
+  children: [
+    { path: 'sectionA', component: SectionAComponent },
+    { path: 'sectionB', component: SectionBComponent },
+    { path: 'sectionC', component: SectionCComponent },
+    { path: 'sectionD', component: SectionDComponent },
+    { path: 'sectionE', component: SectionEComponent },
+  ]
+},
   //Nav Components
   { path: 'contact', component: ContactComponent },
   { path: 'cotizar', component: CotizarComponent },

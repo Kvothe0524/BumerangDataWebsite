@@ -1,6 +1,6 @@
 <body>
     <section class="Container">
-        <form [formGroup]="form" novalidate>
+        <form [formGroup]="form">
             <div class="Top-Title">
                 <h1 class="Contact">BumerangData</h1>
             </div>
@@ -10,31 +10,12 @@
 
                         <div class="input">
                             <input type="text" placeholder="Nombre" formControlName="name">
-
-                            <div class="validacion" *ngIf="name.errors && name.touched">
-                                <div *ngIf="name.hasError('required')">
-                                    Es un campo requerido
-                                </div>
-                                <div *ngIf="name.hasError('minlength')">
-                                    Ingrese 3 caracteres como minimo
-                                </div>
-                            </div>
                         </div>
 
                         <div class="input">
-                            <input type="text" placeholder="Email - micorreo@gmail.com" formControlName="email">
+                            <input type="text" placeholder="password" formControlName="password">
 
-                            <div class="validacion" *ngIf="email.errors && email.touched">
-                                <div *ngIf="email.hasError('required')">
-                                    Es un campo requerido
-                                </div>
-                                <div *ngIf="email.hasError('minlength')">
-                                    Ingrese 5 caracteres como minimo
-                                </div>
-                                <div *ngIf="email.hasError('pattern')">
-                                    Ingrese un correo valido
-                                </div>
-                            </div>
+
                         </div>
 
                     </div>

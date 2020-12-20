@@ -221,6 +221,9 @@ a {
 
 //RESPONSIVE
 @media screen and (max-width: 1200px) {
+    body {
+        min-height: 800px;
+    }
     .Main-Background {
         flex-direction: column;
         .Box-Left {
@@ -229,6 +232,9 @@ a {
             text-align: center;
             a {
                 font-size: 1.5rem;
+            }
+            .title {
+                margin-bottom: 20px;
             }
             .intro {
                 height: 100%;
@@ -276,6 +282,7 @@ a {
         .Box-Right {
             a {
                 font-size: 1.2rem;
+                text-align: center;
             }
         }
     }

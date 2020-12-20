@@ -1,0 +1,318 @@
+body {
+    height: 700px;
+    width: 100%;
+    background: rgba($color: #E8DFDF, $alpha: 1.0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    --header1: calc(1.2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(3.5rem + 1vw);
+    --big: calc(6rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --gray-text: #525252;
+    scroll-behavior: smooth;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    height: 23%;
+    width: 16%;
+    background: rgb(1, 2, 34);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    a {
+        color: white;
+        font-size: 1rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+p {
+    font-family: "Ruhl", sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: "Ruhl Medium", sans-serif;
+    font-size: var(--header1);
+}
+
+a {
+    font-family: "Ruhl", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5vw;
+}
+
+.Main-Background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .Section {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        align-items: center;
+        background: white;
+        .Box-Middle {
+            height: 100%;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            .container {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 50%;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                vertical-align: middle;
+            }
+            .text {
+                height: 40%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                vertical-align: middle;
+            }
+            img {
+                width: 50%;
+            }
+            .gallery {
+                width: 50%;
+                display: grid;
+                grid-template-columns: repeat(1, 2fr);
+                grid-template-rows: repeat(3, 8vw);
+                grid-gap: 0rem;
+            }
+            .gallery__item {
+                padding: 0%;
+                margin: 0%;
+                margin-left: 20px;
+                display: flex;
+                align-content: left;
+                justify-content: left;
+                align-items: center;
+                justify-items: center;
+                vertical-align: middle;
+                img {
+                    width: 40px;
+                    padding: 10%;
+                    margin: 0%;
+                }
+                p {
+                    padding: 0%;
+                    margin: 0%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+//RESPONSIVE
+@media screen and (max-width: 1300px) {
+    .Main-Background {
+        h1 {
+            font-size: 2.6rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .Section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            vertical-align: middle;
+            align-items: center;
+            .Box-Middle {
+                width: 90%;
+                .container {
+                    width: 100%;
+                    height: 90%;
+                }
+                .text {
+                    height: 40%;
+                    h1 {
+                        padding: 0%;
+                        margin: 0%;
+                    }
+                }
+                .middle {
+                    height: 70%;
+                    width: 100%;
+                }
+                .img-3 {
+                    width: 50%;
+                }
+                .gallery {
+                    width: 50%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 2fr);
+                    grid-template-rows: repeat(3, 7vw);
+                    p {
+                        font-size: 1.2rem;
+                    }
+                }
+                .gallery__item {
+                    img {
+                        width: 30px;
+                        padding: 10%;
+                        margin: 0%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 842px) {
+    .Main-Background {
+        p {
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 1.5rem;
+        }
+        .Section {
+            .Box-Middle {
+                width: 90%;
+                .container {
+                    width: 100%;
+                    height: 90%;
+                }
+                .text {
+                    height: 50%;
+                    padding-bottom: 20px;
+                    h1 {
+                        padding: 0%;
+                        margin: 0%;
+                    }
+                }
+                .middle {
+                    height: 50%;
+                    width: 100%;
+                }
+                .img-3 {
+                    width: 50%;
+                }
+                .gallery {
+                    width: 50%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 100%);
+                    grid-template-rows: repeat(3, 30%);
+                }
+                .gallery__item {
+                    img {
+                        width: 30px;
+                        padding: 10%;
+                        margin: 0%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        height: 900px;
+    }
+    .Main-Background {
+        .Section {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            vertical-align: middle;
+            align-items: center;
+            .Box-Middle {
+                width: 90%;
+                .center {
+                    .text {
+                        height: 40%;
+                        h1 {
+                            padding: 0%;
+                            margin: 0%;
+                        }
+                    }
+                    .middle {
+                        height: 50%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        vertical-align: middle;
+                        align-items: center;
+                        justify-content: center;
+                        .container {
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            vertical-align: middle;
+                            align-items: center;
+                            .img-3 {
+                                width: 100%;
+                            }
+                            .gallery {
+                                grid-template-columns: repeat(1, 100%);
+                                grid-template-rows: repeat(3, 30%);
+                                width: 90%;
+                            }
+                            .gallery__item {
+                                width: 100%;
+                                margin: 0;
+                                img {
+                                    width: 30px;
+                                    padding: 10%;
+                                    margin: 0%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

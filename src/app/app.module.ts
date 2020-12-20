@@ -28,6 +28,11 @@ import { QuestionsDComponent } from './components/faq/category/questions-d/quest
 import { QuestionsEComponent } from './components/faq/category/questions-e/questions-e.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
+import { SectionAComponent } from './components/benefits/sections/section-a/section-a.component';
+import { SectionBComponent } from './components/benefits/sections/section-b/section-b.component';
+import { SectionCComponent } from './components/benefits/sections/section-c/section-c.component';
+import { SectionDComponent } from './components/benefits/sections/section-d/section-d.component';
+import { SectionEComponent } from './components/benefits/sections/section-e/section-e.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +54,12 @@ import { LoginComponent } from './components/login/login.component';
     QuestionsCComponent,
     QuestionsDComponent,
     QuestionsEComponent,
-    LoginComponent
+    LoginComponent,
+    SectionAComponent,
+    SectionBComponent,
+    SectionCComponent,
+    SectionDComponent,
+    SectionEComponent
   
   ],
   imports: [
