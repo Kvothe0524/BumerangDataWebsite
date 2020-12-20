@@ -5,7 +5,18 @@
         <input type="checkbox" class="menu-check">
         <ul class="nav-links">
             <li class="main"><a routerLink="">Home</a></li>
-            <li> <a routerLink="solucion">Conócenos</a></li>
+            <li>
+                <div class="dropdown">
+                    <li> <a routerLink="solucion">Conócenos</a></li>
+                    <div class="dropdown-content">
+                        <a routerLink="components/benefits/section-a">Qué Somos</a>
+                        <a routerLink="components/benefits/section-b">Análisis de Nivel Superior</a>
+                        <a routerLink="components/benefits/section-c">Gestor documental</a>
+                        <a routerLink="components/benefits/section-d">Como funciona</a>
+                        <a routerLink="components/benefits/section-e">Parametrización Incremental</a>
+                    </div>
+                </div>
+            </li>
             <li> <a routerLink="components/faq/questions-a">FAQ</a></li>
             <li> <a routerLink="contact">Contáctanos</a></li>
             <li> <a routerLink="usuarios">Usuarios</a></li>

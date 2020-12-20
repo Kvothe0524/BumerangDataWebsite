@@ -43,11 +43,11 @@ const routes: Routes = [
   //BENEFITS COMPONENTS
   { path: 'components/benefits', component: BenefitsComponent,
   children: [
-    { path: 'sectionA', component: SectionAComponent },
-    { path: 'sectionB', component: SectionBComponent },
-    { path: 'sectionC', component: SectionCComponent },
-    { path: 'sectionD', component: SectionDComponent },
-    { path: 'sectionE', component: SectionEComponent },
+    { path: 'section-a', component: SectionAComponent },
+    { path: 'section-b', component: SectionBComponent },
+    { path: 'section-c', component: SectionCComponent },
+    { path: 'section-d', component: SectionDComponent },
+    { path: 'section-e', component: SectionEComponent },
   ]
 },
   //Nav Components
