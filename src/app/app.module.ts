@@ -37,6 +37,7 @@ import { StatsComponent } from './components/welcome/sections/stats/stats.compon
 import { TestamentsComponent } from './components/welcome/sections/testaments/testaments.component';
 import { ImplementationComponent } from './components/welcome/sections/implementation/implementation.component';
 import { ReasonsComponent } from './components/welcome/sections/reasons/reasons.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +77,7 @@ import { ReasonsComponent } from './components/welcome/sections/reasons/reasons.
     HttpClientModule,
     ParticlesModule,
     BrowserAnimationsModule,
-    
+
 
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
