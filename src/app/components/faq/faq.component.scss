@@ -34,22 +34,27 @@ h2 {
     margin: 0;
     padding: 0;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.479);
+    *:focus {
+        outline: 0;
+    }
     a {
         border: none;
         text-align: center;
         color: rgb(0, 0, 0);
-        &:hover {
-            background: rgba(1, 2, 34, 0.61);
-            color: white;
-            padding: 10px;
-            border-radius: 3px;
-            border: none;
-        }
     }
     li {
         border: none;
         text-align: center;
         padding-bottom: 10px;
+        padding-top: 10px;
+        &:hover {
+            background: rgba(1, 2, 34, 0.61);
+            width: 100%;
+            a {
+                color: white;
+                padding: 10px;
+            }
+        }
     }
 }
 
@@ -76,6 +81,16 @@ h2 {
     }
     .Nav-Links {
         width: 100%;
+        li {
+            &:hover {
+                background: rgba(1, 2, 34, 0.61);
+                width: 20%;
+                a {
+                    color: white;
+                    padding: 10px;
+                }
+            }
+        }
     }
 }
 
@@ -84,12 +99,14 @@ h2 {
     .Main-Background {
         width: 100%;
         padding-top: 100px;
-        margin-top: 40px;
     }
     .side-nav {
         width: 100%;
+        top: 10vh;
         position: fixed;
-        height: 150px;
+    }
+    h2 {
+        display: none;
     }
     .Nav-Links {
         padding: 0;

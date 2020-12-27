@@ -11,7 +11,6 @@ import { NavComponent } from './shared/nav/nav.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { SolucionComponent } from './components/solucion/solucion.component';
 import { QuestionsAComponent } from './components/faq/category/questions-a/questions-a.component';
 import { QuestionsBComponent } from './components/faq/category/questions-b/questions-b.component';
 import { QuestionsCComponent } from './components/faq/category/questions-c/questions-c.component';
@@ -25,11 +24,7 @@ import { SectionDComponent } from './components/benefits/sections/section-d/sect
 import { SectionEComponent } from './components/benefits/sections/section-e/section-e.component';
 
 const routes: Routes = [
-  { path: '', component: BodyComponent },
-  { path: 'components/welcome', component: WelcomeComponent },
-  { path: 'components/introduction', component: IntroductionComponent },
-  { path: 'components/aboutus', component: AboutusComponent },
-  { path: 'components/services', component: ServicesComponent },
+  { path: '', component: WelcomeComponent },
   //FAQ COMPONENTS
   { path: 'components/faq', component: FaqComponent,
     children: [
@@ -41,7 +36,7 @@ const routes: Routes = [
     ]
   },
   //BENEFITS COMPONENTS
-  { path: 'components/benefits', component: BenefitsComponent,
+  { path: 'benefits', component: BenefitsComponent,
   children: [
     { path: 'section-a', component: SectionAComponent },
     { path: 'section-b', component: SectionBComponent },
@@ -53,7 +48,6 @@ const routes: Routes = [
   //Nav Components
   { path: 'contact', component: ContactComponent },
   { path: 'cotizar', component: CotizarComponent },
-  { path: 'solucion', component: SolucionComponent },
   { path: 'nosotros', component: AboutusComponent },
   { path: 'usuarios', component: LoginComponent}
   

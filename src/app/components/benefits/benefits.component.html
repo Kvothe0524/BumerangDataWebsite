@@ -1,5 +1,23 @@
-<app-section-a></app-section-a>
-<app-section-b></app-section-b>
-<app-section-c></app-section-c>
-<app-section-d></app-section-d>
-<app-section-e></app-section-e>
+<body>
+    <ul class="Nav-Links">
+        <li (click)="toSectionA()"><a>¿Qué Somos?</a></li>
+        <li (click)="toSectionB()"><a>Análisis de Nivel Sperior</a></li>
+        <li (click)="toSectionC()"><a>Gestor documental inteligente</a></li>
+        <li (click)="toSectionD()"><a>BumerangData y tu Empresa</a></li>
+        <li (click)="toSectionE()"><a>Parametrización Incremental</a></li>
+    </ul>
+    <div class="Main-Background">
+        <div class="Box-Middle">
+
+            <img class="pad" src="assets\img\picture5.png">
+            <h1 class="subtitle animate__fadeInDown"> <strong>BumerangData </strong> La solución <br> de gestión integral avanzada</h1>
+        </div>
+    </div>
+</body>
+
+
+<app-section-a id="section-a"></app-section-a>
+<app-section-b id="section-b"></app-section-b>
+<app-section-c id="section-c"></app-section-c>
+<app-section-d id="section-d"></app-section-d>
+<app-section-e id="section-e"></app-section-e>

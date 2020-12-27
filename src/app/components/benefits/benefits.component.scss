@@ -1,0 +1,217 @@
+body {
+    min-height: 700px;
+    width: 100%;
+    padding-bottom: 75px;
+    background: rgba($color: #E8DFDF, $alpha: 1.0);
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 100%;
+    --header1: calc(5rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --big: calc(6rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --gray-text: #525252;
+    scroll-behavior: smooth;
+    background-image: url(/assets/img/Buildings.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+label,
+input,
+p {
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: var(--text);
+}
+
+strong {
+    color: cont;
+}
+
+.subtitle {
+    font-weight: lighter;
+    font-size: 3rem;
+    color: rgb(11, 7, 31);
+}
+
+h1 {
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    margin: 0px;
+    font-size: var(--header1);
+    color: black;
+}
+
+h2 {
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: var(--header2);
+}
+
+u {
+    font-size: 2.3rem;
+}
+
+h3 {
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: var(--header3);
+}
+
+h4,
+h5 {
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: var(--header4);
+}
+
+ul {
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    list-style: none;
+}
+
+.Nav-Links {
+    min-height: 300px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    vertical-align: middle;
+    list-style: none;
+    position: fixed;
+    top: 30%;
+    left: 1%;
+    cursor: pointer;
+}
+
+li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    &:hover {
+        animation: fadeIn ease 0.8s;
+        -webkit-animation: fadeIn ease 0.8s;
+        padding-left: 10px;
+        a {
+            color: rgb(30, 18, 100);
+        }
+    }
+    a {
+        color: rgb(0, 0, 0);
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+        line-height: 1px;
+    }
+}
+
+.Box-Middle {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    .pad {
+        width: 50%;
+    }
+}
+
+.Main-Background {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    align-items: center;
+    padding-top: 50px;
+}
+
+//FADE OUT EFFECT  
+.animate__fadeInDown {
+    animation: fadeInDown ease 1s;
+    -webkit-animation: fadeInDown ease 1s;
+    -moz-animation: fadeInDown ease 1s;
+    -o-animation: fadeInDown ease 1s;
+    -ms-animation: fadeInDown ease 1s;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate__fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+//ANIMATION
+@media screen and (max-width: 1200px) {
+    .Nav-Links {
+        opacity: 0;
+        display: none !important;
+    }
+    .Main-Background {
+        h1 {
+            font-size: 2.5rem;
+        }
+        u {
+            font-size: 2rem;
+        }
+        a {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 842px) {
+    .Main-Background {
+        h1 {
+            font-size: 2rem;
+        }
+        u {
+            font-size: 1.5rem;
+        }
+        .pad {
+            width: 80%;
+        }
+        a {
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-nav',
@@ -9,31 +10,30 @@ import { Component, OnInit } from '@angular/core';
 
 export class NavComponent implements OnInit {
 
-  constructor() { 
-    
+  constructor(private location: Location, private router: Router) { 
+    console.log('constructor ran');    
   }
 
   ngOnInit(): void {
-    
+
+  } 
+  toSectionA(){
+    document.getElementById("benefits/sectionA").scrollIntoView({behavior:"smooth"});
   }
-  toWelcome(){
-    document.getElementById("welcome").scrollIntoView({behavior:"smooth"});
+  toSectionB(){
+    document.getElementById("section-b").scrollIntoView({behavior:"smooth"});
   }
-  toBenefits(){
-    document.getElementById("benefits").scrollIntoView({behavior:"smooth"});
+  toSectionC(){
+    document.getElementById("section-c").scrollIntoView({behavior:"smooth"});
   }
-  toAboutUs(){
-    document.getElementById("aboutus").scrollIntoView({behavior:"smooth"});
+  toSectionD(){
+    document.getElementById("section-d").scrollIntoView({behavior:"smooth"});
   }
-  toServices(){
-    document.getElementById("services").scrollIntoView({behavior:"smooth"});
-  }
-  toContact(){
-    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+  toSectionE(){
+    document.getElementById("section-e").scrollIntoView({behavior:"smooth"});
   }
   scrollToElement($element): void {
     console.log($element);
     $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
-
 }

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +18,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ExpComponent } from './exp/exp.component';
 import { CotizarComponent } from './components/cotizar/cotizar.component';
-import { SolucionComponent } from './components/solucion/solucion.component';
 import { ParticlesModule } from 'angular-particle';
 
 import {  HashLocationStrategy, LocationStrategy} from '@angular/common';
@@ -33,6 +33,10 @@ import { SectionBComponent } from './components/benefits/sections/section-b/sect
 import { SectionCComponent } from './components/benefits/sections/section-c/section-c.component';
 import { SectionDComponent } from './components/benefits/sections/section-d/section-d.component';
 import { SectionEComponent } from './components/benefits/sections/section-e/section-e.component';
+import { StatsComponent } from './components/welcome/sections/stats/stats.component';
+import { TestamentsComponent } from './components/welcome/sections/testaments/testaments.component';
+import { ImplementationComponent } from './components/welcome/sections/implementation/implementation.component';
+import { ReasonsComponent } from './components/welcome/sections/reasons/reasons.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,7 +52,6 @@ import { SectionEComponent } from './components/benefits/sections/section-e/sect
     ContactComponent,
     ExpComponent,
     CotizarComponent,
-    SolucionComponent,
     QuestionsAComponent,
     QuestionsBComponent,
     QuestionsCComponent,
@@ -59,7 +62,11 @@ import { SectionEComponent } from './components/benefits/sections/section-e/sect
     SectionBComponent,
     SectionCComponent,
     SectionDComponent,
-    SectionEComponent
+    SectionEComponent,
+    StatsComponent,
+    TestamentsComponent,
+    ImplementationComponent,
+    ReasonsComponent
   
   ],
   imports: [
@@ -68,7 +75,8 @@ import { SectionEComponent } from './components/benefits/sections/section-e/sect
     ReactiveFormsModule,
     HttpClientModule,
     ParticlesModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    
 
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
