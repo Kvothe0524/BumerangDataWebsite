@@ -37,6 +37,7 @@ import { StatsComponent } from './components/welcome/sections/stats/stats.compon
 import { TestamentsComponent } from './components/welcome/sections/testaments/testaments.component';
 import { ImplementationComponent } from './components/welcome/sections/implementation/implementation.component';
 import { ReasonsComponent } from './components/welcome/sections/reasons/reasons.component';
+import { SaleComponent } from './components/sale/sale.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { ReasonsComponent } from './components/welcome/sections/reasons/reasons.
     StatsComponent,
     TestamentsComponent,
     ImplementationComponent,
-    ReasonsComponent
+    ReasonsComponent,
+    SaleComponent
   
   ],
   imports: [
