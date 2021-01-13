@@ -15,11 +15,7 @@ body {
     --special-color: #906272;
     --background-color: #414141;
     --gray-text: #525252;
-    background-image: url(/assets/img/background5.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: white;
     scroll-behavior: smooth;
 }
 
@@ -84,7 +80,7 @@ p {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(3, 33%);
     background: white;
-    box-shadow: 5px 5px #00000044;
+    box-shadow: 3px 3px 3px #0000008a;
     .box {
         padding-left: 20px;
     }
