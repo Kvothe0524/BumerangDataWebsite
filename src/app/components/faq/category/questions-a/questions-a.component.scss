@@ -1,11 +1,3 @@
-body {
-    height: 100%;
-    width: 100%;
-    font-family: "Ruhl", sans-serif;
-    display: flex;
-    padding-top: 100px;
-}
-
 h1 {
     text-align: center;
 }
@@ -19,7 +11,7 @@ h1 {
 }
 
 .Box {
-    width: 90%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-items: center;
@@ -46,11 +38,57 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 5vw);
-    grid-row-gap: 250px;
+    grid-row-gap: 50px;
     grid-column-gap: 50px;
     text-align: center;
     justify-items: center;
     justify-content: center;
+}
+
+.faq-question--1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.faq-question--2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    justify-items: center;
+    align-content: center;
+    .logo {
+        width: 60%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.faq-question--4 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.faq-question--5 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.faq-question--6 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 @media (max-width: 1540px) {
@@ -81,7 +119,7 @@ h1 {
     .Gallery {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(12, 10vw);
-        grid-row-gap: 20px;
+        grid-row-gap: 40px;
         grid-column-gap: 50px;
     }
     .faq-question--1 {
@@ -96,29 +134,23 @@ h1 {
         grid-row-start: 3;
         grid-row-end: 4;
     }
-    .faq-question--3 {
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 5;
-        grid-row-end: 6;
-    }
     .faq-question--4 {
         grid-column-start: 1;
         grid-column-end: 1;
-        grid-row-start: 7;
-        grid-row-end: 8;
+        grid-row-start: 4;
+        grid-row-end: 5;
     }
     .faq-question--5 {
         grid-column-start: 1;
         grid-column-end: 1;
-        grid-row-start: 9;
-        grid-row-end: 10;
+        grid-row-start: 6;
+        grid-row-end: 7;
     }
     .faq-question--6 {
         grid-column-start: 1;
         grid-column-end: 1;
-        grid-row-start: 11;
-        grid-row-end: 12;
+        grid-row-start: 8;
+        grid-row-end: 9;
     }
 }
 

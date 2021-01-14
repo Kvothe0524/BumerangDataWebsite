@@ -1,7 +1,6 @@
 body {
     height: 500px;
     width: 100%;
-    background: rgba($color: #ffffff, $alpha: 1.0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +14,7 @@ body {
     --special-color: #906272;
     --background-color: #414141;
     --gray-text: #525252;
-    background: white;
+    background: rgb(6, 4, 70);
     scroll-behavior: smooth;
 }
 
@@ -80,7 +79,7 @@ p {
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(3, 33%);
     background: white;
-    box-shadow: 3px 3px 3px #0000008a;
+    box-shadow: 1px 3px 3px 1px #0000008a;
     .box {
         padding-left: 20px;
     }
