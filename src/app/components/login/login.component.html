@@ -1,6 +1,6 @@
 <body>
     <section class="Container">
-        <form [formGroup]="form">
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
             <div class="Top">
                 <img clas="logo" src="assets\img\Logo-Black.png">
             </div>
@@ -9,11 +9,11 @@
                     <div class="input-form">
 
                         <div class="input">
-                            <input type="text" placeholder="Nombre" formControlName="name">
+                            <input type="text" placeholder="Email" formControlName="email">
                         </div>
 
                         <div class="input">
-                            <input type="text" placeholder="password" formControlName="password">
+                            <input type="password" placeholder="password" formControlName="password">
 
 
                         </div>

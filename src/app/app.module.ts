@@ -20,7 +20,7 @@ import { ExpComponent } from './exp/exp.component';
 import { CotizarComponent } from './components/cotizar/cotizar.component';
 import { ParticlesModule } from 'angular-particle';
 
-import {  HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { QuestionsAComponent } from './components/faq/category/questions-a/questions-a.component';
 import { QuestionsBComponent } from './components/faq/category/questions-b/questions-b.component';
 import { QuestionsCComponent } from './components/faq/category/questions-c/questions-c.component';
@@ -38,6 +38,14 @@ import { TestamentsComponent } from './components/welcome/sections/testaments/te
 import { ImplementationComponent } from './components/welcome/sections/implementation/implementation.component';
 import { ReasonsComponent } from './components/welcome/sections/reasons/reasons.component';
 import { SaleComponent } from './components/sale/sale.component';
+import { FormUploadComponent } from './upload/form-upload/form-upload.component';
+import { ListUploadComponent } from './upload/list-upload/list-upload.component';
+import { DetailsUploadComponent } from './upload/details-upload/details-upload.component';
+import { GraphQLModule } from './graphql.module';
+import { GraphqlComponent } from './graphql/graphql.component';
+import { APOLLO_OPTIONS } from 'apollo-angular';
+import { HttpLink } from 'apollo-angular/http';
+import { InMemoryCache } from '@apollo/client/core';
 
 @NgModule({
   declarations: [
@@ -69,8 +77,11 @@ import { SaleComponent } from './components/sale/sale.component';
     TestamentsComponent,
     ImplementationComponent,
     ReasonsComponent,
-    SaleComponent
-  
+    SaleComponent,
+    FormUploadComponent,
+    ListUploadComponent,
+    DetailsUploadComponent,
+    GraphqlComponent,
   ],
   imports: [
     BrowserModule,
@@ -79,10 +90,9 @@ import { SaleComponent } from './components/sale/sale.component';
     HttpClientModule,
     ParticlesModule,
     BrowserAnimationsModule,
-
-
+    GraphQLModule,
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

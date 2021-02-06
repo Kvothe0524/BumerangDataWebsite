@@ -33,6 +33,7 @@
             "scripts": [
               "src/assets/scripts/scroll-animation.js"
             ]
+            
           },
           "configurations": {
             "production": {
