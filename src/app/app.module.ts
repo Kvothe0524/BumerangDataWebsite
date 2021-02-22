@@ -46,6 +46,7 @@ import { GraphqlComponent } from './graphql/graphql.component';
 import { APOLLO_OPTIONS } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 import { InMemoryCache } from '@apollo/client/core';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -82,6 +83,7 @@ import { InMemoryCache } from '@apollo/client/core';
     ListUploadComponent,
     DetailsUploadComponent,
     GraphqlComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
