@@ -34,13 +34,13 @@ h1 {
 
 .Gallery {
     width: 80%;
+    padding-bottom: 23em;
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(3, 20vh);
     text-align: center;
     justify-items: center;
     justify-content: center;
-    padding-bottom: 20px;
 }
 
 .faq-question--1 {
@@ -85,10 +85,15 @@ h1 {
     }
 }
 
-@media (max-width: 700px) {}
+@media (max-width: 500px) {
+    .Gallery {
+        grid-template-rows: repeat(4, 50vh);
+    }
+}
 
 @media (max-width: 800px) {
     .Box {
         width: 100%;
     }
+    
 }

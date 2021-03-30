@@ -35,15 +35,15 @@ h1 {
 
 .Gallery {
     width: 80%;
+    padding-bottom: 23em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 10vw);
-    grid-row-gap: 20px;
+    grid-template-rows: repeat(2, 1vw);
+    grid-row-gap: 0px;
     grid-column-gap: 50px;
     text-align: center;
     justify-items: center;
     justify-content: center;
-    padding-bottom: 20px;
 }
 
 .faq-question--1 {
@@ -124,5 +124,12 @@ h1 {
     }
     .Box {
         width: 100%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .Gallery {
+        grid-template-rows: repeat(12, 10%);
     }
 }
