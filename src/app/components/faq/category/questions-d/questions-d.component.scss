@@ -43,6 +43,7 @@ h1 {
     text-align: center;
     justify-items: center;
     justify-content: center;
+    padding-bottom: 23em;
 }
 
 @media (max-width: 1540px) {
@@ -119,6 +120,15 @@ h1 {
 @media (max-width: 800px) {
     .Gallery {
         grid-template-rows: repeat(12, 8%);
+    }
+    .Box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .Gallery {
+        grid-template-rows: repeat(12, 11%);
     }
     .Box {
         width: 100%;
