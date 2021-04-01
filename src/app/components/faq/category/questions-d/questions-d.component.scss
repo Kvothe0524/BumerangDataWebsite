@@ -38,7 +38,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 2vw);
-    grid-row-gap: 50px;
+    grid-row-gap: 10em;
     grid-column-gap: 50px;
     text-align: center;
     justify-items: center;
