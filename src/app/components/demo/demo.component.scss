@@ -1,0 +1,41 @@
+body {
+    min-height: 950px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/Buildings.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.demo-section {
+    margin-top: 7em;
+}
+
+h1 {
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    margin: 0px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    font-size: 5em;
+    color: white;
+    text-shadow: 2px 2px #2a2a2a41;
+}
+
+h2 {
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: 3em;
+}
+
+h3 {
+    font-family: "Ruhl";
+    src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
+    font-size: 2em;
+}
