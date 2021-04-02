@@ -22,6 +22,7 @@ import { SectionBComponent } from './components/benefits/sections/section-b/sect
 import { SectionCComponent } from './components/benefits/sections/section-c/section-c.component';
 import { SectionDComponent } from './components/benefits/sections/section-d/section-d.component';
 import { SectionEComponent } from './components/benefits/sections/section-e/section-e.component';
+import { DemoComponent } from './components/demo/demo.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent },
@@ -49,7 +50,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'cotizar', component: CotizarComponent },
   { path: 'nosotros', component: AboutusComponent },
-  { path: 'usuarios', component: LoginComponent}
+  { path: 'usuarios', component: LoginComponent},
+  { path: 'demo', component: DemoComponent}
   
 ];
 
