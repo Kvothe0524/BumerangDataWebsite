@@ -16,6 +16,15 @@ body {
 .demo-section {
     width: 70%;
     margin-top: 7em;
+    margin-bottom: 5em;
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    vertical-align: middle;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -24,9 +33,9 @@ h1 {
     margin: 0px;
     font-weight: bolder;
     padding-bottom: 10px;
-    font-size: 5em;
-    color: #E2F1F8;
-    text-shadow: 2px 2px #2a2a2a41;
+    font-size: 4.5em;
+    //color: #E2F1F8;
+    //text-shadow: 2px 2px #2a2a2a41;
 }
 
 h2 {
@@ -41,7 +50,7 @@ h3 {
     font-size: 3.2em;
 }
 
-h2, h3 {
+h1,h2, h3 {
     color: white;
     text-shadow:
        3px 3px 0 #4056C6,
@@ -53,17 +62,18 @@ h2, h3 {
 
 
 .title {
-    width: 100%;
+    width: 40%;
     background-color: #4056C6;
-    opacity: 95%;
+    opacity: 85%;
     margin-left: 0.5em;
     margin-right: 0.5em;
-    border-radius: 1em;
+    margin-top: 1em;
+    border-radius: 1.3em;
 }
 
 img {
     height: 200px;
-    width: 400px;    
+    width: 450px;    
     padding-top: 2em;
     padding-bottom: 2em;
 }
