@@ -7,7 +7,7 @@ body {
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/img/Buildings.jpg);
+    background-image: url('../../../assets/img/background-demo.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,18 +24,43 @@ h1 {
     font-weight: bolder;
     padding-bottom: 10px;
     font-size: 5em;
-    color: white;
+    color: #E2F1F8;
     text-shadow: 2px 2px #2a2a2a41;
 }
 
 h2 {
     font-family: "Ruhl";
     src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-    font-size: 3em;
+    font-size: 4.1em;
 }
 
 h3 {
     font-family: "Ruhl";
     src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
-    font-size: 2em;
+    font-size: 3.2em;
+}
+
+h2, h3 {
+    color: white;
+    text-shadow:
+       3px 3px 0 #4056C6,
+     -1px -1px 0 #4056C6,  
+      1px -1px 0 #4056C6,
+      -1px 1px 0 #4056C6,
+       1px 1px 0 #4056C6;
+}
+
+
+.title {
+    width: 70em;
+    background-color: #4056C6;
+    opacity: 95%;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 1em;
+}
+
+img {
+    padding-top: 2em;
+    padding-bottom: 2em;
 }

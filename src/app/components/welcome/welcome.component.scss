@@ -1,27 +1,38 @@
+
+
+
 .apps {
-    background: rgb(2, 27, 73);
+    //background: rgb(2, 27, 73);
     background: rgb(2, 27, 73);
 }
 
 body {
     min-height: 650px;
     width: 100%;
-    background: rgba($color: #E8DFDF, $alpha: 1.0);
+    //background: rgba($color: #E8DFDF, $alpha: 1.0);
     display: flex;
     justify-content: space-around;
     vertical-align: middle;
     align-items: center;
     font-size: 100%;
-    --header1: calc(1.7rem + 1vw);
+    --header1: calc(2rem + 1vw);
     --header2: calc(3.5rem + 1vw);
     --header3: calc(3rem + 1vw);
     --header4: calc(2.4rem + 1vw);
-    --text: calc(0.5rem + 1vw);
+    --text: calc(1rem + 1vw);
     --big: calc(6rem + 1vw);
-    --special: calc(1rem + 1vw);
+    --special: calc(1.7rem + 1vw);
     --special-color: #906272;
     --background-color: #414141;
     --gray-text: #525252;
+    --time1: 0.5s;
+    --time2: 1.75s;
+    --time3: 3.50s;
+    --time4: 5.25s;
+    --time5: 7.00s;
+    --time6: 8.75s;
+    --time7: 10.25s;
+    --time8: 12.10s;
     scroll-behavior: smooth;
     background: rgb(2, 27, 73);
 }
@@ -43,7 +54,7 @@ h1 {
     font-weight: bolder;
     padding-bottom: 10px;
     font-size: var(--header1);
-    color: white;
+    color: rgb(207, 205, 205);
     text-shadow: 2px 2px #2a2a2a41;
 }
 
@@ -92,23 +103,26 @@ a {
     justify-content: center;
     justify-items: center;
     .Box-Left {
+        padding-top: 5em;
         height: 100%;
-        width: 35%;
+        width: 45%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: left;
         a {
-            color: rgba(255, 255, 255, 0.712);
+            color: rgba(255, 255, 255, 0.918);
         }
         .title {
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
         .intro {
+            margin-top: 5em;
             width: 100%;
             display: flex;
             flex-direction: row;
             button {
+                height: 20%;
                 font-family: "Ruhl";
                 src: url("/assets/fonts/FrankRuhlLibre-Regular.ttf");
                 width: 200px;
@@ -138,18 +152,29 @@ a {
         }
     }
     .Box-Right {
+        margin-top: 50px;
         height: 70%;
-        width: 35%;
+        width: 45%;
         display: flex;
+        position: relative;
         flex-direction: column;
         flex-wrap: nowrap;
         a {
             padding: 1px;
             font-size: (var(--special));
-            color: white;
+            color: rgb(207, 205, 205);
             text-align: right;
         }
     }
+}
+span {
+    opacity: 0;
+    animation-iteration-count: infinite;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 //ANIMATIONS
@@ -223,6 +248,80 @@ a {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
 }
+
+
+
+/* .rotatingText-adjective {
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    left: 0;
+    margin-bottom: 0;
+    margin-top: 50px;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+  } */
+  
+  .rotatingText-adjective:nth-of-type(1) {
+    animation-name: rotate;
+    animation-duration: 22s;
+    animation-delay: 1s;
+  }
+  
+  .rotatingText-adjective:nth-of-type(2) {
+    animation-name: rotate;
+    animation-duration: 22s;
+    animation-delay: 6s;
+  }
+
+  .rotatingText-adjective:nth-of-type(3) {
+    animation-name: rotate;
+    animation-duration: 22s;
+    animation-delay: 11s;
+  }
+
+  .rotatingText-adjective:nth-of-type(4) {
+    animation-name: rotate;
+    animation-duration: 22s;
+    animation-delay: 16s;
+  }
+
+  
+  @keyframes rotate {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 50px, 0);
+    }
+    
+    17%, 23% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    
+    26% {
+      opacity: 0;
+      transform: translate3d(0, -25px, 0);
+    }
+  }
+  
+  @keyframes rotate-last {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, 50px, 0);
+    }
+    
+    50%, 100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
 
 //RESPONSIVE
 @media screen and (max-width: 1200px) {

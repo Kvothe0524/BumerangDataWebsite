@@ -1,3 +1,4 @@
+import { ɵWebAnimationsStyleNormalizer } from '@angular/animations/browser';
 import { Component, OnInit } from '@angular/core';
 import { ParticlesModule } from 'angular-particle';
 
@@ -74,7 +75,7 @@ export class WelcomeComponent implements OnInit {
       },
       "move": {
         "enable": true,
-        "speed": 1,
+        "speed": 1.0,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -91,11 +92,11 @@ export class WelcomeComponent implements OnInit {
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": true,
+          "enable": false,
           "mode": "repulse"
         },
         "onclick": {
-          "enable": true,
+          "enable": false,
           "mode": "push"
         },
         "resize": true
@@ -131,7 +132,122 @@ export class WelcomeComponent implements OnInit {
   
 
   ngOnInit(): void {
+   /*  var r = document.querySelector<HTMLElement>('body');
+    var i_time1 = 500;
+    var i_time2 = 1750;
+    var i_time3 = 3500;
+    var i_time4 = 5250;
+    var i_time5 = 7000;
+    var i_time6 = 8750;
+    var i_time7 = 11250;
+    var i_time8 = 12000;
+
+    function changeTime1(){
+      var rs = getComputedStyle(r);
+      var time1 = rs.getPropertyValue('--time1');
+      console.log("time1:" + time1)
+      time1 = time1.replace("s","");
+      var time_int = parseInt(time1);
+      time_int = time_int + 12.00;
+      time1 = time_int.toString() + "s";
+      
+      r.style.setProperty('--time1', time1);
+      i_time1 = i_time1 + 12000;
+    }
+    function changeTime2(){
+      var rs = getComputedStyle(r);
+      var time2 = rs.getPropertyValue('--time2');
+      time2 = time2.replace("s","");
+      var time_int = parseInt(time2);
+      time_int = time_int + 12.00;
+      time2 = time_int.toString() + "s";
+      r.style.setProperty('--time2', time2);
+      i_time2 = i_time2 + 12000;
+    }
+    function changeTime3(){
+      var rs = getComputedStyle(r);
+      var time3 = rs.getPropertyValue('--time3');
+      time3 = time3.replace("s","");
+      var time_int = parseInt(time3);
+      time_int = time_int + 12.00;
+      time3 = time_int.toString() + "s";
+      r.style.setProperty('--time3', time3);
+      i_time3 = i_time3 + 12000;
+    }
+    function changeTime4(){
+      var rs = getComputedStyle(r);
+      var time4 = rs.getPropertyValue('--time4');
+      time4 = time4.replace("s","");
+      var time_int = parseInt(time4);
+      time_int = time_int + 12.00;
+      time4 = time_int.toString() + "s";
+      r.style.setProperty('--time4', time4);
+      i_time4 = i_time4 + 12000;
+    }
+    function changeTime5(){
+      var rs = getComputedStyle(r);
+      var time5 = rs.getPropertyValue('--time5');
+      time5 = time5.replace("s","");
+      var time_int = parseInt(time5);
+      time_int = time_int + 12.00;
+      time5 = time_int.toString() + "s";
+      r.style.setProperty('--time5', time5);
+      i_time5 = i_time5 + 12000;
+    }
+    function changeTime6(){
+      var rs = getComputedStyle(r);
+      var time6 = rs.getPropertyValue('--time6');
+      time6 = time6.replace("s","");
+      var time_int = parseInt(time6);
+      time_int = time_int + 12.00;
+      time6 = time_int.toString() + "s";
+      r.style.setProperty('--time6', time6);
+      i_time6 = i_time6 + 12000;
+    }
+    function changeTime7(){
+      var rs = getComputedStyle(r);
+      var time7 = rs.getPropertyValue('--time7');
+      time7 = time7.replace("s","");
+      var time_int = parseInt(time7);
+      time_int = time_int + 12.00;
+      time7 = time_int.toString() + "s";
+      r.style.setProperty('--time7', time7);
+      i_time7 = i_time7 + 12000;
+    }
+    function changeTime8(){
+      var rs = getComputedStyle(r);
+      var time8 = rs.getPropertyValue('--time8');
+      time8 = time8.replace("s","");
+      var time_int = parseInt(time8);
+      time_int = time_int + 12.00;
+      time8 = time_int.toString() + "s";
+      r.style.setProperty('--time8', time_int.toString());
+      i_time8 = i_time8 + 12000;
+    }
+    function sleep(ms) {
+      return new Promise(resolve => setTimeout(resolve, ms));
+    }
     
+    function waitTime(){
+      setTimeout(changeTime1, i_time1);
+      setTimeout(changeTime2, i_time2);
+      setTimeout(changeTime3, i_time3);
+      setTimeout(changeTime4, i_time4);
+      setTimeout(changeTime5, i_time5);
+      setTimeout(changeTime6, i_time6);
+      setTimeout(changeTime7, i_time7);
+      setTimeout(changeTime8, i_time8);
+    }
+
+    function myLoop() {         
+      setTimeout(function() {
+        waitTime();   
+          myLoop();             
+      }, 12000)
+    }
+
+    waitTime();
+    myLoop(); */
   }
   
   
