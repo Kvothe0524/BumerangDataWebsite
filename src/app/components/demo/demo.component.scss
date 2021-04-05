@@ -62,7 +62,7 @@ h1,h2, h3 {
 
 
 .title {
-    width: 40%;
+    width: 50%;
     background-color: #4056C6;
     opacity: 85%;
     margin-left: 0.5em;
@@ -82,7 +82,18 @@ video {
   height: 700px;
 }
 
+@media screen and (max-width: 1400px) { 
+
+    .title {
+        width: 65%;
+    }
+}
+
 @media screen and (max-width: 1200px) { 
+
+    .title {
+        width: 85%;
+    }
 
     h1{
         font-size: 3.2em;
@@ -101,7 +112,24 @@ video {
 
 }
 
+@media screen and (max-width: 1000px) {  
+
+    .title {
+        width: 100%;
+    }
+
+    img {
+        height: 150px;
+        width: 300px;
+    }
+
+}
+
+
+
+
 @media screen and (max-width: 600px) { 
+
 
     h1{
         font-size: 2.3em;
